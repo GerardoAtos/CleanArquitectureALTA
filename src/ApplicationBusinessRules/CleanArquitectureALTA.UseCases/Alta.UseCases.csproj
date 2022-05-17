@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Alta.Mongo\Alta.Mongo.csproj" />
     <ProjectReference Include="..\..\..\Alta.PrimeClient\Alta.PrimeClient.csproj" />
     <ProjectReference Include="..\..\..\Alta.Profiles\Alta.Profiles.csproj" />
     <ProjectReference Include="..\..\..\Alta.Utils\Alta.Utils.csproj" />

@@ -5,6 +5,7 @@ using Alta.PrimeClient;
 using Alta.EFCore;
 using Alta.Authentication;
 using Microsoft.Extensions.Configuration;
+using Alta.Mongo;
 
 namespace Alta.IoC
 {
@@ -17,6 +18,7 @@ namespace Alta.IoC
             services.AddPrimeClientServices(configuration);
             services.AddCookieAuthentication();
             services.AddEF(configuration);
+            services.AddMongo(configuration);
             return services;
         }
     }
