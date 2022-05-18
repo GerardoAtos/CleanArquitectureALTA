@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alta.Mongo.Repositories
+namespace Alta.Mongo.Interfaces
 {
-    public interface IRequestInitiateRepository
+    public interface ILoadErrorRepository
     {
-        public Task Insert(RequestInitiateDTO requestInitiateDTO);
+        public Task Insert(LoadErrorDTO loadErrordDTO);
     }
 }

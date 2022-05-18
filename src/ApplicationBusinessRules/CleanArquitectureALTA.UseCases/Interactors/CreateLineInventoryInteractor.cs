@@ -26,8 +26,11 @@ namespace Alta.UseCases.Interactors
         {
             string uri = _primeWsOptions.Endpoints["CreateLineInventoryInIFD"];
             await _primeClient.Authenticate();
+
             await _loggingRepository.InsertLogAsync(new Log());
+
             await _primeClient.SendMessage(uri, createLineInventoryDTO);
+
             await _createLineInventoryRepository.Insert(createLineInventoryDTO);
             await Task.CompletedTask;
         }

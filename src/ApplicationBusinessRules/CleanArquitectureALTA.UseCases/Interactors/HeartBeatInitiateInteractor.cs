@@ -2,6 +2,7 @@
 using Alta.DTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.Mongo.Repositories;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using AutoMapper;
@@ -11,19 +12,14 @@ namespace Alta.UseCases.Interactors
 {
     public class HeartBeatInitiateInteractor : IHeartBeatInitiateInputPort
     {
-        private readonly ILoggingRepository _loggingRepository;
-        private readonly IAltaRepository _altaRepository;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly ILoggingRepository _logger;
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
-        private readonly IMapper _mapper;
+        private readonly IHeartBeatInitiateRepository _heartBeatInitiateRepository;
 
-        public HeartBeatInitiateInteractor(IHeartBeatInitiateOutputPort heartbeatOutputPort,
-            ILoggingRepository loggingRepository, IAltaRepository altaRepository, IPrimeClient primeClient,
-            IMapper mapper, IUnitOfWork unitOfWork, IOptions<PrimeWsOptions> options)
-            =>
-                (_, _loggingRepository, _altaRepository, _primeClient, _mapper, _unitOfWork, _primeWsOptions)
-                = (heartbeatOutputPort, loggingRepository, altaRepository, primeClient, mapper, unitOfWork, options.Value);
+        public HeartBeatInitiateInteractor(ILoggingRepository logger, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IHeartBeatInitiateRepository heartBeatInitiateRepository) =>
+                (_logger, _primeClient, _primeWsOptions, _heartBeatInitiateRepository) = 
+                (logger, primeClient, options.Value, heartBeatInitiateRepository);
         
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
@@ -31,10 +27,10 @@ namespace Alta.UseCases.Interactors
 
             await _primeClient.Authenticate();
             await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
-            await _loggingRepository.InsertLogAsync(new Log());
-            await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
-            await _unitOfWork.SaveChanges();
-            //TODO agregar la insercion del Json de HeartbeatInitiate
+            await _logger.InsertLogAsync(new Log());
+
+            //Insert into MongoDb
+            await _heartBeatInitiateRepository.Insert(heartBeatInitiateDTO);
             await Task.CompletedTask;
         }
     }

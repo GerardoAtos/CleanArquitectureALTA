@@ -1,4 +1,5 @@
 ﻿using Alta.DTOs;
+using Alta.Mongo.Interfaces;
 using Alta.UseCasesPorts.Interfaces;
 using System.Threading.Tasks;
 
@@ -6,15 +7,16 @@ namespace Alta.UseCases.Interactors
 {
     public class RequestConfirmInteractor : IRequestConfirmInputPort
     {
-        public Task Handle(RequestConfirmDTO _requestConfirmDTO)
+        private readonly ILoadDetailRepository _loadDetailRepository;
+        private readonly ILoadErrorRepository _loadErrorRepository;
+        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository) => 
+            (_loadDetailRepository, _loadErrorRepository) = 
+            (loadDetailRepository, loadErrorRepository);
+
+        public async Task Handle(RequestConfirmDTO requestConfirmDTO)
         {
-            //TODO: registrar con mongo
-            //TODO: publicar
-            
-
-            return Task.CompletedTask;
-
-
+            if(requestConfirmDTO is LoadDetailedDTO) await _loadDetailRepository.Insert((LoadDetailedDTO)requestConfirmDTO);
+            else if (requestConfirmDTO is LoadErrorDTO) await _loadErrorRepository.Insert((LoadErrorDTO)requestConfirmDTO);
         }
     }
 }

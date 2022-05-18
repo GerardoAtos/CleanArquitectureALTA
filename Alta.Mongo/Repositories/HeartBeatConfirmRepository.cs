@@ -15,11 +15,7 @@ namespace Alta.Mongo.Repositories
         public IMongoCollection<HeartBeatConfirmDTO> Collection { get; set; }
         private readonly IMongoContext _context;
 
-        public HeartBeatConfirmRepository(IMongoContext context)
-        {
-            _context = context;
-            Collection = context.GetCollection<HeartBeatConfirmDTO>(Name);
-        }
+        public HeartBeatConfirmRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollection<HeartBeatConfirmDTO>(Name));
 
         public async Task Insert(HeartBeatConfirmDTO heartBeatConfirmDTO)
         {

@@ -19,7 +19,11 @@ namespace Alta.Mongo
             services.AddSingleton<IMongoContext, MongoContext>();
             services.AddScoped<ICreateLineInventoryRepository, CreateLineInventoryRepository>();
             services.AddScoped<IHeartBeatConfirmRepository, HeartBeatConfirmRepository>();
+            services.AddScoped<IHeartBeatInitiateRepository, HeartBeatInitiateRepository>();
             services.AddScoped<ILoadDetailRepository, LoadDetailRepository>();
+            services.AddScoped<ILoadErrorRepository, LoadErrorRepository>();
+            services.AddScoped<IRequestInitiateRepository, RequestInitiateRepository>();
+
             return services;
         }
     }

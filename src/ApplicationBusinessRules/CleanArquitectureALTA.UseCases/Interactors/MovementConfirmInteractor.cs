@@ -11,21 +11,21 @@ namespace Alta.UseCases.Interactor
     public class MovementConfirmInteractor : IMovementConfirmInputPort
     {
         private readonly IMovementConfirmOutputPort _movementconfirmoutputport;
-        private readonly ILoggingRepository _loggingRepository;
+        private readonly ILoggingRepository _logger;
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
 
-        public MovementConfirmInteractor(IMovementConfirmOutputPort movementconfirmoutputport, ILoggingRepository loggingRepository,
+        public MovementConfirmInteractor(IMovementConfirmOutputPort movementconfirmoutputport, ILoggingRepository logger,
             IPrimeClient primeClient, IOptions<PrimeWsOptions> options) => 
-            (_loggingRepository, _movementconfirmoutputport, _primeClient, _primeWsOptions) = 
-            (loggingRepository, movementconfirmoutputport, primeClient, options.Value);
+            (_logger, _movementconfirmoutputport, _primeClient, _primeWsOptions) = 
+            (logger, movementconfirmoutputport, primeClient, options.Value);
        
 
         public async Task Handle(MovementConfirmDTO movmentConfirmDTO) 
         {            
             string uri = _primeWsOptions.Endpoints["MovementConfirm"];
             await _primeClient.Authenticate();
-            await _loggingRepository.InsertLogAsync(new Log());
+            await _logger.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, movmentConfirmDTO);
             //TODO agregar la insercion del Json de MovementConfirmDTO
             await Task.CompletedTask;

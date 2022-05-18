@@ -23,7 +23,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
         public async Task<IActionResult> HeartBeatInitiate(HeartBeatInitiateDTO data)
         {
             await _heartBeatInitiateInputPort.Handle(data);
-
+            //TODO: ver que contestariamos dependiendo de si prime esta arriba o no
             return Ok();
         }
     }
