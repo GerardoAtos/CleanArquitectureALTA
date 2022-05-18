@@ -1,5 +1,6 @@
 ﻿using Alta.Mongo.Configurations;
 using Alta.Mongo.Interfaces;
+using Alta.Mongo.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +17,9 @@ namespace Alta.Mongo
         {
             MongoDesigner.Configure();
             services.AddSingleton<IMongoContext, MongoContext>();
+            services.AddScoped<ICreateLineInventoryRepository, CreateLineInventoryRepository>();
+            services.AddScoped<IHeartBeatConfirmRepository, HeartBeatConfirmRepository>();
+            services.AddScoped<ILoadDetailRepository, LoadDetailRepository>();
             return services;
         }
     }

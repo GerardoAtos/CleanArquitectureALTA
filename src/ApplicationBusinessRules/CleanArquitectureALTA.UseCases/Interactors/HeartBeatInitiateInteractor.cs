@@ -34,6 +34,7 @@ namespace Alta.UseCases.Interactors
             await _loggingRepository.InsertLogAsync(new Log());
             await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
             await _unitOfWork.SaveChanges();
+            //TODO agregar la insercion del Json de HeartbeatInitiate
             await Task.CompletedTask;
         }
     }

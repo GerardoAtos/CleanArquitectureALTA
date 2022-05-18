@@ -27,6 +27,7 @@ namespace Alta.UseCases.Interactor
             await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, movmentConfirmDTO);
+            //TODO agregar la insercion del Json de MovementConfirmDTO
             await Task.CompletedTask;
         }
     }

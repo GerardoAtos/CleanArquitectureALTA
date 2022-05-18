@@ -1,4 +1,5 @@
-﻿using Alta.Mongo.Interfaces;
+﻿using Alta.DTOs.DtoAbstraction;
+using Alta.Mongo.Interfaces;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
@@ -29,6 +30,9 @@ namespace Alta.Mongo
             return _client;
         }
 
-
+        public IMongoCollection<T> GetCollection<T>(string collectionName) where T : DtoBase
+        {
+            return _database.GetCollection<T>(collectionName);
+        }
     }
 }

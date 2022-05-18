@@ -35,6 +35,7 @@ namespace Alta.UseCases.Interactors
             await _altaRepository.InsertRequestInitiateAsync(_mapper.Map<RequestInitiate>(requestInitiateDTO));
             await _unitOfWork.SaveChanges();
             Console.WriteLine("result: " + result.ToJson());
+            //TODO agregar la insercion del Json de RequestInitiateDTO
             await Task.CompletedTask;
         }
     }
