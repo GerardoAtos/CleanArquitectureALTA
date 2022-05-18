@@ -24,7 +24,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
         {
             await _heartBeatInitiateInputPort.Handle(data);
             //TODO: ver que contestariamos dependiendo de si prime esta arriba o no
-            return Ok();
+            return Created(HttpContext.Request.Path, data);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Alta.Controllers.AltaWS
         {
             await this._createLineInventoryInputPort.Handle(data);
 
-            return Ok();
+            return Created(HttpContext.Request.Path, data);
         }
     }
 }

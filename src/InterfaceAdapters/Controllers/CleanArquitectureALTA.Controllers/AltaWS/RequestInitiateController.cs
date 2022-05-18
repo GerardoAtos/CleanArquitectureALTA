@@ -20,7 +20,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
         {
             await _requestInitiateInputPort.Handle(data);
 
-            return Ok();
+            return Created(HttpContext.Request.Path, data);
         }
     }
 }

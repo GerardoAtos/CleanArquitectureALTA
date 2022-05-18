@@ -37,7 +37,7 @@ namespace Alta.Controllers.AltaWS
             {
                 await _heartBeatConfirmInputPort.Handle((HeartBeatConfirmDTO)dto);
             }
-            return Ok();
+            return Created(HttpContext.Request.Path, dto);
         }
         
 
