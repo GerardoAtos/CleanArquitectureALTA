@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alta.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace Alta.Mongo.Repositories
 {
     public interface IMovementConfirmRepository
     {
+        public Task Insert(MovementConfirmDTO movementConfirmDTO);
     }
 }

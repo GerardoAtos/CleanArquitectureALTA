@@ -23,6 +23,7 @@ namespace Alta.Mongo
             services.AddScoped<ILoadDetailRepository, LoadDetailRepository>();
             services.AddScoped<ILoadErrorRepository, LoadErrorRepository>();
             services.AddScoped<IRequestInitiateRepository, RequestInitiateRepository>();
+            services.AddScoped<IMovementConfirmRepository, MovementConfirmRepository>();
 
             return services;
         }
