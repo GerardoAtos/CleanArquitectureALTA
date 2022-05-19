@@ -14,6 +14,8 @@ namespace Alta.Entities.POCOs
         public HEARTBEATSEG HEARTBEAT_SEG { get; set; }
     }
 
+
+
     public class HEARTBEATSEG
     {
         public string TEXT { get; set; }

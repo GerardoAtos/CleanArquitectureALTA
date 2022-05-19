@@ -1,7 +1,7 @@
 ﻿
 namespace Alta.Entities.POCOs.Abstractions
 {
-    public abstract class AbstractCTRLSEG
+    public  class AbstractCTRLSEG
     {
         public long TRANID { get; set; }
         public long TRANDT { get; set; }

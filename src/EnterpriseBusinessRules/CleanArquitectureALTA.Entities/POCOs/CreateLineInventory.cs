@@ -1,4 +1,6 @@
-﻿namespace Alta.Entities.POCOs
+﻿using Alta.Entities.POCOs.Abstractions;
+
+namespace Alta.Entities.POCOs
 {
     public class CreateLineInventory : Entity
     {
@@ -10,7 +12,7 @@
         public CREATELINEINVENTORYSEG CREATE_LINE_INVENTORY_SEG { get; set; }
     }
 
-    public class CTRLSEG : CTRLSEGAbstract
+    public class CTRLSEG : AbstractCTRLSEG
     {
         //this is only using the base abstract class
     }
