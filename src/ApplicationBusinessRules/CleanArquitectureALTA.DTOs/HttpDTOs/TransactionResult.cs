@@ -12,5 +12,6 @@ namespace Alta.DTOs.HttpDTOs
         public int CODE { get; set; }
         public string MESSAGE { get; set; }
         public dynamic DATA { get; set; }
+
     }
-}
+}   

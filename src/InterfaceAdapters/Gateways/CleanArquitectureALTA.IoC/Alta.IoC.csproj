@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,6 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Alta.Authentication\Alta.Authentication.csproj" />
+    <ProjectReference Include="..\..\..\..\Alta.Mongo\Alta.Mongo.csproj" />
     <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj" />
     <ProjectReference Include="..\..\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj" />
   </ItemGroup>

@@ -5,10 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Alta.Mongo\Alta.Mongo.csproj" />
+    <ProjectReference Include="..\..\..\Alta.PrimeClient\Alta.PrimeClient.csproj" />
+    <ProjectReference Include="..\..\..\Alta.Profiles\Alta.Profiles.csproj" />
+    <ProjectReference Include="..\..\..\Alta.Utils\Alta.Utils.csproj" />
+    <ProjectReference Include="..\..\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\Alta.Entities.csproj" />
     <ProjectReference Include="..\CleanArquitectureALTA.UseCasesPorts\Alta.UseCasesPorts.csproj" />
   </ItemGroup>
 

@@ -2,6 +2,8 @@
 {
     public class LoadDetail // JSON File "LOAD_ERROR", tipos inferidos del documento y las demas tablas.
     {
+        public string LODNum_DEFAULT = "00";
+        
         public int Id { get; set; } // (int, not null)
         public string TranId { get; set; } // (varchar(50), null)
         public string TranDT { get; set; } // (varchar(50), null)

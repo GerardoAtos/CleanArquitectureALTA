@@ -1,51 +1,62 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5DF9561D-953F-4ADF-9113-24C8417201C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseBusinessRules", "EnterpriseBusinessRules", "{844C5E19-F6B6-4686-AB6C-380CF5C76F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.Entities", "src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\Alta.Entities.csproj", "{975200FC-3A58-41AD-984D-82DB1F0C08D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Entities", "src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\Alta.Entities.csproj", "{975200FC-3A58-41AD-984D-82DB1F0C08D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationBusinessRules", "ApplicationBusinessRules", "{460F1CC2-78F4-4658-8129-0FA4879F5801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.DTOs", "src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj", "{A217BE7C-4670-42CF-8042-C1F42F2B5A71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.DTOs", "src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj", "{A217BE7C-4670-42CF-8042-C1F42F2B5A71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrameworksAndDrivers", "FrameworksAndDrivers", "{DD9D73F0-FD9B-4EF9-B678-C244E3BB251D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{21F65386-0F14-4E02-8DE5-3A4B6A311158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.API", "src\FrameworksAndDrivers\UIs\CleanArquitectureALTA.API\Alta.API.csproj", "{DEB2E6AC-B69A-4349-920C-B5D0F7DE3536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.API", "src\FrameworksAndDrivers\UIs\CleanArquitectureALTA.API\Alta.API.csproj", "{DEB2E6AC-B69A-4349-920C-B5D0F7DE3536}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceAdapters", "InterfaceAdapters", "{BCEDF2E8-C2B9-4633-85A6-CD0BD37E77E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{491380D8-ABBF-4B9D-93C5-7EC4B2779DEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.Presenters", "src\InterfaceAdapters\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj", "{0CFA25C0-3ABA-496D-8546-4519BFAA8408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Presenters", "src\InterfaceAdapters\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj", "{0CFA25C0-3ABA-496D-8546-4519BFAA8408}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{E36DE8C0-9DAA-4B09-A379-6C953640A439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.Controllers", "src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\Alta.Controllers.csproj", "{ABECBD9F-49C7-4C96-99C9-25618A496742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Controllers", "src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\Alta.Controllers.csproj", "{ABECBD9F-49C7-4C96-99C9-25618A496742}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{16EEB3FA-C41B-489E-92B2-820737CE61C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.EFCore", "src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\Alta.EFCore.csproj", "{66145F11-BEF1-47A7-847B-93D0B86C63F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.EFCore", "src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\Alta.EFCore.csproj", "{66145F11-BEF1-47A7-847B-93D0B86C63F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.IoC", "src\InterfaceAdapters\Gateways\CleanArquitectureALTA.IoC\Alta.IoC.csproj", "{3B913458-6E20-4F06-85C3-AFC18B775967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.IoC", "src\InterfaceAdapters\Gateways\CleanArquitectureALTA.IoC\Alta.IoC.csproj", "{3B913458-6E20-4F06-85C3-AFC18B775967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.UseCases", "src\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj", "{0C6A67BB-57E8-4593-963A-4A801B597166}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.UseCases", "src\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj", "{0C6A67BB-57E8-4593-963A-4A801B597166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.UseCasesPorts", "src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\Alta.UseCasesPorts.csproj", "{B1DC0E80-BEDE-4B83-8747-03F11D1076D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.UseCasesPorts", "src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\Alta.UseCasesPorts.csproj", "{B1DC0E80-BEDE-4B83-8747-03F11D1076D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.PrimeClient", "Alta.PrimeClient\Alta.PrimeClient.csproj", "{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{EEF7AEFE-42AE-4F7E-828F-F21F8CB3FAA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Utils", "Alta.Utils\Alta.Utils.csproj", "{981FA105-8A24-42D9-9A6E-C211549C8589}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Profiles", "Alta.Profiles\Alta.Profiles.csproj", "{CC768D6A-5BE5-45E4-8F46-7A890A586D94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{BFEBDFE2-9FBC-4C59-A5E9-3173B86A9681}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Authentication", "Alta.Authentication\Alta.Authentication.csproj", "{0F47F33B-2848-466F-B3BC-FD36E356770A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Mongo", "Alta.Mongo\Alta.Mongo.csproj", "{9751A117-736C-4FE7-82FD-143B7F06B8EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{975200FC-3A58-41AD-984D-82DB1F0C08D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -84,6 +95,29 @@ Global
 		{B1DC0E80-BEDE-4B83-8747-03F11D1076D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1DC0E80-BEDE-4B83-8747-03F11D1076D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1DC0E80-BEDE-4B83-8747-03F11D1076D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981FA105-8A24-42D9-9A6E-C211549C8589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981FA105-8A24-42D9-9A6E-C211549C8589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981FA105-8A24-42D9-9A6E-C211549C8589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981FA105-8A24-42D9-9A6E-C211549C8589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC768D6A-5BE5-45E4-8F46-7A890A586D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC768D6A-5BE5-45E4-8F46-7A890A586D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC768D6A-5BE5-45E4-8F46-7A890A586D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC768D6A-5BE5-45E4-8F46-7A890A586D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F47F33B-2848-466F-B3BC-FD36E356770A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F47F33B-2848-466F-B3BC-FD36E356770A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F47F33B-2848-466F-B3BC-FD36E356770A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F47F33B-2848-466F-B3BC-FD36E356770A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{844C5E19-F6B6-4686-AB6C-380CF5C76F76} = {5DF9561D-953F-4ADF-9113-24C8417201C3}
@@ -103,5 +137,15 @@ Global
 		{3B913458-6E20-4F06-85C3-AFC18B775967} = {16EEB3FA-C41B-489E-92B2-820737CE61C1}
 		{0C6A67BB-57E8-4593-963A-4A801B597166} = {460F1CC2-78F4-4658-8129-0FA4879F5801}
 		{B1DC0E80-BEDE-4B83-8747-03F11D1076D4} = {460F1CC2-78F4-4658-8129-0FA4879F5801}
+		{2CD1765F-DF5B-4551-BDF7-1A0BBBD60D22} = {16EEB3FA-C41B-489E-92B2-820737CE61C1}
+		{EEF7AEFE-42AE-4F7E-828F-F21F8CB3FAA0} = {844C5E19-F6B6-4686-AB6C-380CF5C76F76}
+		{981FA105-8A24-42D9-9A6E-C211549C8589} = {EEF7AEFE-42AE-4F7E-828F-F21F8CB3FAA0}
+		{CC768D6A-5BE5-45E4-8F46-7A890A586D94} = {460F1CC2-78F4-4658-8129-0FA4879F5801}
+		{BFEBDFE2-9FBC-4C59-A5E9-3173B86A9681} = {DD9D73F0-FD9B-4EF9-B678-C244E3BB251D}
+		{0F47F33B-2848-466F-B3BC-FD36E356770A} = {BFEBDFE2-9FBC-4C59-A5E9-3173B86A9681}
+		{9751A117-736C-4FE7-82FD-143B7F06B8EF} = {16EEB3FA-C41B-489E-92B2-820737CE61C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF470B94-87CF-4BF7-9D63-082C290BAE46}
 	EndGlobalSection
 EndGlobal

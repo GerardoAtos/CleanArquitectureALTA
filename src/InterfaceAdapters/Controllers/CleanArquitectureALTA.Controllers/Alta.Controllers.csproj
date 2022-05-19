@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj" />
     <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\Alta.UseCasesPorts.csproj" />
+    <ProjectReference Include="..\..\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj" />
   </ItemGroup>
 
 </Project>

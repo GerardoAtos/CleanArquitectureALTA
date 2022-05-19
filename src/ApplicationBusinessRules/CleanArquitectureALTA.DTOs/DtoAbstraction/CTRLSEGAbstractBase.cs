@@ -10,10 +10,10 @@ namespace Alta.DTOs.DtoAbstraction
     public abstract class CTRLSEGAbstractBase
     {
         [JsonPropertyName("TRANID")]
-        public string TRANID { get; set; }
+        public long TRANID { get; set; }
 
         [JsonPropertyName("TRANDT")]
-        public string TRANDT { get; set; }
+        public long TRANDT { get; set; }
 
         [JsonPropertyName("WCS_ID")]
         public string WCS_ID { get; set; }

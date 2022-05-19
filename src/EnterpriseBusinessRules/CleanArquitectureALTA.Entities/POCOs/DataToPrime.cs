@@ -2,9 +2,8 @@
 
 namespace Alta.Entities.POCOs
 {
-    public class DateFromPrime //ALTA_WS_DATA_FROM_PRIME - constraint en date
+    public class DataToPrime : Entity//ALTA_WS_DATA_TO_PRIME - constraint en date
     {
-        public int Id { get; set; } // (int, not null)
         public string TranId { get; set; } // (varchar(50), null)
         public string Data { get; set; } // (varchar(MAX), null)
         public string Endpoint { get; set; } // (varchar(50), null)

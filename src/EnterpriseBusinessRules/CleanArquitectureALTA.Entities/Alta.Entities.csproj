@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="POCOs\" />
+    <ProjectReference Include="..\..\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj" />
   </ItemGroup>
 
 </Project>

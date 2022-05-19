@@ -1,15 +1,9 @@
 ﻿using Alta.DTOs.DtoAbstraction;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace Alta.DTOs
 {
-    public class CreateLineInventoryDTO
+    public class CreateLineInventoryDTO : DtoBase
     {
         [JsonPropertyName("CREATE_LINE_INVENTORY_IN_IFD")]
         public CREATELINEINVENTORYINIFD CREATE_LINE_INVENTORY_IN_IFD { get; set; }

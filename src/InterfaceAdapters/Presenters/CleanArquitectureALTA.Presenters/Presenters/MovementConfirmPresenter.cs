@@ -13,10 +13,10 @@ namespace Alta.Presenters.Presenters
     {
         public MovementConfirmDTO Content { get; private set; }
 
-        public Task Handle(MovementConfirmDTO movementConfirmDTO)
+        public async Task Handle(MovementConfirmDTO movementConfirmDTO)
         {
             Content = movementConfirmDTO;
-            return Task.CompletedTask;
+            await Task.CompletedTask;
         }
     }
 }

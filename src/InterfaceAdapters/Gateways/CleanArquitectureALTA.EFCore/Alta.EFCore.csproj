@@ -1,7 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityConfiguration\**" />
+    <EmbeddedResource Remove="EntityConfiguration\**" />
+    <None Remove="EntityConfiguration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Alta.Utils\Alta.Utils.csproj" />
+    <ProjectReference Include="..\..\..\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\Alta.Entities.csproj" />
+  </ItemGroup>
 
 </Project>
