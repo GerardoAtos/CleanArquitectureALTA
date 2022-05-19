@@ -15,7 +15,7 @@ namespace Alta.Mongo.Repositories
         public IMongoCollection<RequestInitiateDTO> Collection { get; set; }
         private readonly IMongoContext _context;
 
-        public RequestInitiateRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollection<RequestInitiateDTO>(Name));
+        public RequestInitiateRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<RequestInitiateDTO>(Name));
 
 
         public async Task Insert(RequestInitiateDTO requestInitiateDTO)

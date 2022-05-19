@@ -16,6 +16,7 @@ namespace Alta.Mongo
         public static IServiceCollection AddMongo(this IServiceCollection services, IConfiguration configuration)
         {
             MongoDesigner.Configure();
+            services.Configure<MongoOptions>(configuration.GetSection(MongoOptions.MongoSettings));
             services.AddSingleton<IMongoContext, MongoContext>();
             services.AddScoped<ICreateLineInventoryRepository, CreateLineInventoryRepository>();
             services.AddScoped<IHeartBeatConfirmRepository, HeartBeatConfirmRepository>();
@@ -24,7 +25,7 @@ namespace Alta.Mongo
             services.AddScoped<ILoadErrorRepository, LoadErrorRepository>();
             services.AddScoped<IRequestInitiateRepository, RequestInitiateRepository>();
             services.AddScoped<IMovementConfirmRepository, MovementConfirmRepository>();
-
+            
             return services;
         }
     }

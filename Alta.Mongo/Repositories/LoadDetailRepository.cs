@@ -18,7 +18,7 @@ namespace Alta.Mongo.Repositories
         public LoadDetailRepository(IMongoContext context)
         {
             _context = context;
-            Collection = context.GetCollection<LoadDetailedDTO>(Name);
+            Collection = context.GetCollectionByKey<LoadDetailedDTO>(Name);
         }
 
         public async Task Insert(LoadDetailedDTO loadDetailedDTO)

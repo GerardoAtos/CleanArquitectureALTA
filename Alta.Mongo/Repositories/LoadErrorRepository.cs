@@ -16,7 +16,7 @@ namespace Alta.Mongo.Repositories
         public IMongoCollection<LoadErrorDTO> Collection { get; set; }
         private readonly IMongoContext _context;
 
-        public LoadErrorRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollection<LoadErrorDTO>(Name));
+        public LoadErrorRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<LoadErrorDTO>(Name));
 
         public async Task Insert(LoadErrorDTO loadErrordDTO)
         {

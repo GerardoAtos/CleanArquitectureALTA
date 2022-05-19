@@ -10,6 +10,7 @@ namespace Alta.Mongo.Interfaces
 {
     public interface IMongoContext
     {
-        public IMongoCollection<T> GetCollection<T>(string collectionName) where T : DtoBase;
+        public IMongoCollection<T> GetCollectionByKey<T>(string key) where T : DtoBase;
+
     }
 }

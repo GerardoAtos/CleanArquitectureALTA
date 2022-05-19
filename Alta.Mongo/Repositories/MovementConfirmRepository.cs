@@ -15,7 +15,7 @@ namespace Alta.Mongo.Repositories
         public IMongoCollection<MovementConfirmDTO> Collection { get; set; }
         private readonly IMongoContext _context;
 
-        public MovementConfirmRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollection<MovementConfirmDTO>(Name));
+        public MovementConfirmRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<MovementConfirmDTO>(Name));
         public async Task Insert(MovementConfirmDTO movementConfirmDTO)
         {
             await Collection.InsertOneAsync(movementConfirmDTO);
