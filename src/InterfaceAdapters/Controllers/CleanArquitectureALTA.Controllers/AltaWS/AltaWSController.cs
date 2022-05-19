@@ -30,7 +30,7 @@ namespace Alta.Controllers.AltaWS
         public async Task<IActionResult> SEND_MESSAGE(JsonElement json)
         {
             DtoBase dto = (DtoBase)HttpContext.Items["data"];
-            if(dto is LoadDetailedDTO || dto is LoadErrorDTO){
+            if(dto is LoadDetailDTO || dto is LoadErrorDTO){
                 await _requestConfirmInputPort.Handle((RequestConfirmDTO)dto);
             }
             else if (dto is HeartBeatConfirmDTO)

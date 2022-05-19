@@ -1,13 +1,9 @@
-﻿using Alta.Mongo.Configurations;
+﻿using Alta.Entities.Interfaces.Repositories;
+using Alta.Mongo.Configurations;
 using Alta.Mongo.Interfaces;
 using Alta.Mongo.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alta.Mongo
 {

@@ -1,6 +1,8 @@
 ﻿using Alta.DTOs;
-using Alta.Mongo.Interfaces;
+using Alta.Entities.Interfaces.Repositories;
+using Alta.Entities.POCOs;
 using Alta.UseCasesPorts.Interfaces;
+using AutoMapper;
 using System.Threading.Tasks;
 
 namespace Alta.UseCases.Interactors
@@ -9,14 +11,17 @@ namespace Alta.UseCases.Interactors
     {
         private readonly ILoadDetailRepository _loadDetailRepository;
         private readonly ILoadErrorRepository _loadErrorRepository;
-        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository) => 
-            (_loadDetailRepository, _loadErrorRepository) = 
-            (loadDetailRepository, loadErrorRepository);
+        private readonly IMapper _mapper;
+        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository, IMapper mapper) => 
+            (_loadDetailRepository, _loadErrorRepository, _mapper) = 
+            (loadDetailRepository, loadErrorRepository, mapper);
 
         public async Task Handle(RequestConfirmDTO requestConfirmDTO)
         {
-            if(requestConfirmDTO is LoadDetailedDTO) await _loadDetailRepository.Insert((LoadDetailedDTO)requestConfirmDTO);
-            else if (requestConfirmDTO is LoadErrorDTO) await _loadErrorRepository.Insert((LoadErrorDTO)requestConfirmDTO);
+            //Map DTO to Entity and insert into Mongo
+            //TODO REMOVE IF's
+            if (requestConfirmDTO is LoadDetailDTO) await _loadDetailRepository.Insert(_mapper.Map<LoadDetail>((LoadDetailDTO)requestConfirmDTO));
+            else if (requestConfirmDTO is LoadErrorDTO) await _loadErrorRepository.Insert(_mapper.Map<LoadError>((LoadErrorDTO)requestConfirmDTO));
         }
     }
 }

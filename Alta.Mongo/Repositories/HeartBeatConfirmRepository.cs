@@ -1,10 +1,7 @@
-﻿using Alta.DTOs;
+﻿using Alta.Entities.Interfaces.Repositories;
+using Alta.Entities.POCOs;
 using Alta.Mongo.Interfaces;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alta.Mongo.Repositories
@@ -12,14 +9,14 @@ namespace Alta.Mongo.Repositories
     public class HeartBeatConfirmRepository : IHeartBeatConfirmRepository
     {
         public static string Name = "HeartBeatConfirm";
-        public IMongoCollection<HeartBeatConfirmDTO> Collection { get; set; }
+        public IMongoCollection<HeartBeatConfirm> Collection { get; set; }
         private readonly IMongoContext _context;
 
-        public HeartBeatConfirmRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<HeartBeatConfirmDTO>(Name));
+        public HeartBeatConfirmRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<HeartBeatConfirm>(Name));
 
-        public async Task Insert(HeartBeatConfirmDTO heartBeatConfirmDTO)
+        public async Task Insert(HeartBeatConfirm heartBeatConfirm)
         {
-            await Collection.InsertOneAsync(heartBeatConfirmDTO);
+            await Collection.InsertOneAsync(heartBeatConfirm);
         }
     }
 }

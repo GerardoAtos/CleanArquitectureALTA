@@ -14,7 +14,6 @@ namespace Alta.EFCore
         {
             services.AddDbContext<AltaContext>(opts => opts.UseSqlServer(configuration.GetConnectionString("AltaDbConnectionString")));
             //TODO: Inject repositories with reflection
-            services.AddScoped<IAltaRepository, SQLServerAltaRepository>();
             services.AddScoped<IUnitOfWork, SQLServerUnitOfWork>();
             services.AddScoped<IUserLoginRepository, UserLoginRepository>();
             return services;

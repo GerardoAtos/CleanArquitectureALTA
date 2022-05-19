@@ -1,14 +1,9 @@
-﻿using Alta.DTOs.DtoAbstraction;
+﻿using Alta.Entities.POCOs;
 using Alta.Mongo.Configurations;
 using Alta.Mongo.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alta.Mongo
 {
@@ -34,12 +29,12 @@ namespace Alta.Mongo
             return _client;
         }
 
-        public IMongoCollection<T> GetCollection<T>(string collectionName) where T : DtoBase
+        public IMongoCollection<T> GetCollection<T>(string collectionName) where T : Entity
         {
             return _database.GetCollection<T>(collectionName);
         }
 
-        public IMongoCollection<T> GetCollectionByKey<T>(string key) where T : DtoBase
+        public IMongoCollection<T> GetCollectionByKey<T>(string key) where T : Entity
         {
             return _database.GetCollection<T>(_mongoOptions.Collections[key]);
         }

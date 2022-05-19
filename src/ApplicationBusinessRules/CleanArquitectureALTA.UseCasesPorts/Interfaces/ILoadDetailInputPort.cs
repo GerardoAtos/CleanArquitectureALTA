@@ -5,6 +5,6 @@ namespace Alta.UseCasesPorts.Interfaces
 {
     public interface ILoadDetailInputPort
     {
-        Task Handle(LoadDetailedDTO dto);
+        Task Handle(LoadDetailDTO dto);
     }
 }

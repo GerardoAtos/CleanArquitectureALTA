@@ -1,13 +1,24 @@
-﻿namespace Alta.Entities.POCOs
+﻿using Alta.Entities.POCOs.Abstractions;
+
+namespace Alta.Entities.POCOs
 {
-    public class MovementConfirm // JSON File "MOVEMENT_CONFIRM", tipos inferidos del documento y las demas tablas.
+    public class MovementConfirm : Entity
     {
-        public int Id { get; set; } // (int, not null)
-        public string TranId { get; set; } // (varchar(50), null)
-        public string TranDT { get; set; } // (varchar(50), null)
-        public string WHId { get; set; } // (varchar(50), null)
-        public string WCSId { get; set; } // (varchar(50), null)
-        public string LODNum { get; set; } // (varchar(50), null)
-        public string DSTLoc { get; set; } // (varchar(50), null)
+        public MOVEMENTCONFIRM MOVEMENT_CONFIRM { get; set; }
+    }
+    public class MOVEMENTCONFIRM
+    {
+        public CTRLSEGMovementConfirm CTRL_SEG { get; set; }
+    }
+
+    public class CTRLSEGMovementConfirm : AbstractCTRLSEG
+    {
+        public MOVECONFSEG MOVE_CONF_SEG { get; set; }
+    }
+
+    public class MOVECONFSEG
+    {
+        public string LODNUM { get; set; }
+        public string DSTLOC { get; set; }
     }
 }

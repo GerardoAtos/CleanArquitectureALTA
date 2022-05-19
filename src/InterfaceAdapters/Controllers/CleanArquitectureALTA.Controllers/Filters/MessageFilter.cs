@@ -16,7 +16,7 @@ namespace Alta.Controllers.Filters
 
             var posibles = new[] {
                 ("HEARTBEAT_CONFIRM", typeof(HeartBeatConfirmDTO)),
-                ("LOAD_DETAIL", typeof(LoadDetailedDTO)),
+                ("LOAD_DETAIL", typeof(LoadDetailDTO)),
                 ("LOAD_ERROR", typeof(LoadErrorDTO))};
             
             DtoBase dto;

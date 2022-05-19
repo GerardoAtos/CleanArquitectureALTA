@@ -22,7 +22,7 @@ namespace Alta.EFCore.DataContext
         }
 
         public DbSet<RequestInitiate> RequestInitiate { get; set; }
-        public DbSet<HeartbeatInitiate> HeartbeatInitiate { get; set; }
+        public DbSet<HeartBeatInitiate> HeartbeatInitiate { get; set; }
         public DbSet<DataFromPrime> DataFromPrime { get; set; }
         public DbSet<DataToPrime> DataToPrime { get; set; }
         public DbSet<User> User { get; set; }

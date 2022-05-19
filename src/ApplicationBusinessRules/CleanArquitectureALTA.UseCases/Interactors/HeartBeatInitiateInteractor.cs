@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Alta.DTOs;
 using Alta.Entities.Interfaces;
+using Alta.Entities.Interfaces.Repositories;
 using Alta.Entities.POCOs;
-using Alta.Mongo.Repositories;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using AutoMapper;
@@ -16,10 +16,11 @@ namespace Alta.UseCases.Interactors
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
         private readonly IHeartBeatInitiateRepository _heartBeatInitiateRepository;
+        private readonly IMapper _mapper;
 
-        public HeartBeatInitiateInteractor(ILoggingRepository logger, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IHeartBeatInitiateRepository heartBeatInitiateRepository) =>
-                (_logger, _primeClient, _primeWsOptions, _heartBeatInitiateRepository) = 
-                (logger, primeClient, options.Value, heartBeatInitiateRepository);
+        public HeartBeatInitiateInteractor(ILoggingRepository logger, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IHeartBeatInitiateRepository heartBeatInitiateRepository, IMapper mapper) =>
+                (_logger, _primeClient, _primeWsOptions, _heartBeatInitiateRepository, _mapper) = 
+                (logger, primeClient, options.Value, heartBeatInitiateRepository, mapper);
         
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
@@ -29,8 +30,8 @@ namespace Alta.UseCases.Interactors
             await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
             await _logger.InsertLogAsync(new Log());
 
-            //Insert into MongoDb
-            await _heartBeatInitiateRepository.Insert(heartBeatInitiateDTO);
+            //Map DTO to Entity and insert into MongoDb
+            await _heartBeatInitiateRepository.Insert(_mapper.Map<HeartBeatInitiate>(heartBeatInitiateDTO));
             await Task.CompletedTask;
         }
     }

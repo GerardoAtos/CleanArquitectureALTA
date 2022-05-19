@@ -1,13 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Alta.DTOs;
 using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
+using Alta.Entities.Interfaces.Repositories;
 using Alta.Entities.POCOs;
-using Alta.Mongo.Repositories;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
-using Alta.Utils;
 using AutoMapper;
 using Microsoft.Extensions.Options;
 
@@ -20,11 +18,12 @@ namespace Alta.UseCases.Interactors
         private readonly IPrimeClient _primeClient;
         private readonly IRequestInitiateRepository _requestInitiateRepository;
         private readonly PrimeWsOptions _primeWsOptions;
+        private readonly IMapper _mapper;
 
         public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository logger, 
-                                        IPrimeClient primeClient, IRequestInitiateRepository requestInitiateRepository, IOptions<PrimeWsOptions> primeWsOptions) =>
-            (_logger, _requestInitiateOutputPort, _primeClient, _requestInitiateRepository, _primeWsOptions) 
-            = (logger, requestinitiateoutputport, primeClient, requestInitiateRepository, primeWsOptions.Value);
+                                        IPrimeClient primeClient, IRequestInitiateRepository requestInitiateRepository, IOptions<PrimeWsOptions> primeWsOptions, IMapper mapper) =>
+            (_logger, _requestInitiateOutputPort, _primeClient, _requestInitiateRepository, _primeWsOptions, _mapper) 
+            = (logger, requestinitiateoutputport, primeClient, requestInitiateRepository, primeWsOptions.Value, mapper);
 
         public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
@@ -34,7 +33,8 @@ namespace Alta.UseCases.Interactors
 
             TransactionResult result = await _primeClient.SendMessage(uri, requestInitiateDTO);
 
-            await _requestInitiateRepository.Insert(requestInitiateDTO);
+            //Map DTO to Entity and insert into MongoDb
+            await _requestInitiateRepository.Insert(_mapper.Map<RequestInitiate>(requestInitiateDTO));
             await Task.CompletedTask;
         }
     }

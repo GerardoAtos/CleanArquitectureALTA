@@ -16,9 +16,6 @@ namespace Alta.EFCore.Repositories
         public async Task<bool> ExistsUserAsync(string username, string password)
         {
             return await _context.User.AnyAsync(x => x.UserName == username && x.Password == password && x.IsActive);
-            
-
-
         }
     }
 }

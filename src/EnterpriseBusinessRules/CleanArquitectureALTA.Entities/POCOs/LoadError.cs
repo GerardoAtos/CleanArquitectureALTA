@@ -1,13 +1,27 @@
-﻿namespace Alta.Entities.POCOs
+﻿using Alta.Entities.POCOs.Abstractions;
+
+namespace Alta.Entities.POCOs
 {
-    public class LoadError // JSON File "LOAD_ERROR", tipos inferidos del documento y las demas tablas.
+    public class LoadError : RequestConfirm
     {
-        public int Id { get; set; } // (int, not null)
-        public string TranId { get; set; } // (varchar(50), null)
-        public string TranDT { get; set; } // (varchar(50), null)
-        public string WHId { get; set; } // (varchar(50), null)
-        public string WCSId { get; set; } // (varchar(50), null)
-        public string LODNum { get; set; } // (varchar(50), null)
-        public string ErrorCode { get; set; } // (varchar(50), null)
+        public LOAD_ERROR LOAD_ERROR { get; set; }
+    }
+
+    public partial class LOAD_ERROR
+    {
+        public LOAD_ERROR_CTRLSEG CTRL_SEG { get; set; }
+    }
+
+    public partial class LOAD_ERROR_CTRLSEG : AbstractCTRLSEG
+    {
+        public LOAD_ERROR_SEG LOAD_ERR_SEG { get; set; }
+
+    }
+
+
+    public partial class LOAD_ERROR_SEG
+    {
+        public string LODNUM { get; set; }
+        public string ERROR_CODE { get; set; }
     }
 }

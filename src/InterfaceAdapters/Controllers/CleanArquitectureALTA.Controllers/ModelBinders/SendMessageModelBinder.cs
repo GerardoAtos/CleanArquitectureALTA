@@ -19,7 +19,7 @@ namespace Alta.Controllers.ModelBinders
                 case HeartBeatConfirmDTO:
                     Console.Out.WriteLine("Soy un HeartBeat");
                     break;
-                case LoadDetailedDTO:
+                case LoadDetailDTO:
                     Console.Out.WriteLine("Soy un LoadDetailed");
                     break;
                 case LoadErrorDTO:

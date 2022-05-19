@@ -1,14 +1,8 @@
 ﻿using Alta.DTOs.DtoAbstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace Alta.DTOs
 {
-
     public class RequestInitiateDTO : DtoBase
     {
         [JsonPropertyName("REQUEST")]
@@ -38,9 +32,4 @@ namespace Alta.DTOs
         [JsonPropertyName("CTRL_SEG")]
         public CTRLSEGRequestInitiate CTRLSEG { get; set; }
     }
-
-
-
-
-
 }

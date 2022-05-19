@@ -1,9 +1,10 @@
 ﻿using Alta.DTOs;
 using Alta.Entities.Interfaces;
+using Alta.Entities.Interfaces.Repositories;
 using Alta.Entities.POCOs;
-using Alta.Mongo.Repositories;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
+using AutoMapper;
 using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
 
@@ -16,11 +17,12 @@ namespace Alta.UseCases.Interactor
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
         private readonly IMovementConfirmRepository _movementConfirmRepository;
+        private readonly IMapper _mapper;
 
         public MovementConfirmInteractor(IMovementConfirmOutputPort movementconfirmoutputport, ILoggingRepository logger,
-            IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IMovementConfirmRepository movementConfirmRepository) => 
-            (_logger, _movementconfirmoutputport, _primeClient, _primeWsOptions, _movementConfirmRepository) = 
-            (logger, movementconfirmoutputport, primeClient, options.Value, movementConfirmRepository);
+            IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IMovementConfirmRepository movementConfirmRepository, IMapper mapper) => 
+            (_logger, _movementconfirmoutputport, _primeClient, _primeWsOptions, _movementConfirmRepository, _mapper) = 
+            (logger, movementconfirmoutputport, primeClient, options.Value, movementConfirmRepository, mapper);
        
 
         public async Task Handle(MovementConfirmDTO movmentConfirmDTO) 
@@ -29,9 +31,10 @@ namespace Alta.UseCases.Interactor
             await _primeClient.Authenticate();
             await _logger.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, movmentConfirmDTO);
-            await _movementConfirmRepository.Insert(movmentConfirmDTO);
-            
-            //TODO agregar la insercion del Json de MovementConfirmDTO
+
+            //Map DTO to Entity and insert into MongoDb
+            await _movementConfirmRepository.Insert(_mapper.Map<MovementConfirm>(movmentConfirmDTO));
+
             await Task.CompletedTask;
         }
     }

@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj" />
+    <ProjectReference Include="..\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\Alta.Entities.csproj" />
   </ItemGroup>
 
 </Project>

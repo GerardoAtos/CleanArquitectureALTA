@@ -3,7 +3,7 @@ using Alta.DTOs.DtoAbstraction;
 
 namespace Alta.DTOs
 {
-    public class LoadDetailedDTO : RequestConfirmDTO
+    public class LoadDetailDTO : RequestConfirmDTO
     {
         [JsonPropertyName("LOAD_DETAIL")]
         public LOAD_DETAIL LoadDetail { get; set; }
