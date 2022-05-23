@@ -31,7 +31,7 @@ namespace Alta.UseCases.Interactors
             await _loggingRepository.InsertLogAsync(new Log());
 
             await _primeClient.SendMessage(uri, createLineInventoryDTO);
-            //await _publishEndpoint.Publish("Publicado");
+            await _publishEndpoint.Publish<CreateLineInventoryDTO>(createLineInventoryDTO);
             //Map DTO to Entity and insert into Mongo
             await _createLineInventoryRepository.Insert(_mapper.Map<CreateLineInventory>(createLineInventoryDTO));
             await Task.CompletedTask;

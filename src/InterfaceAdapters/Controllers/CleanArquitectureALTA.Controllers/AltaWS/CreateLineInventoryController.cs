@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Alta.Controllers.AltaWS
 {
-    //[HeaderValidationFilter]
+    [HeaderValidationFilter]
     [Route("api/altaws")]
     [ApiController]
     public class CreateLineInventoryController : ControllerBase
