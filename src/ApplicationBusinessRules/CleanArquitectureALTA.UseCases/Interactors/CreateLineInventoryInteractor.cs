@@ -6,6 +6,7 @@ using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using AutoMapper;
+using MassTransit;
 using Microsoft.Extensions.Options;
 
 namespace Alta.UseCases.Interactors
@@ -17,9 +18,10 @@ namespace Alta.UseCases.Interactors
         private readonly PrimeWsOptions _primeWsOptions;
         private readonly ICreateLineInventoryRepository _createLineInventoryRepository;
         private readonly IMapper _mapper;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public CreateLineInventoryInteractor(ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, ICreateLineInventoryRepository createLineInventoryRepository, IMapper mapper) => 
-            (_loggingRepository, _primeClient, _primeWsOptions, _createLineInventoryRepository, _mapper) = (loggingRepository, primeClient, options.Value, createLineInventoryRepository, mapper);
+        public CreateLineInventoryInteractor(ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, ICreateLineInventoryRepository createLineInventoryRepository, IMapper mapper, IPublishEndpoint publishEndpoint) => 
+            (_loggingRepository, _primeClient, _primeWsOptions, _createLineInventoryRepository, _mapper, _publishEndpoint) = (loggingRepository, primeClient, options.Value, createLineInventoryRepository, mapper, publishEndpoint);
 
         public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
@@ -29,7 +31,7 @@ namespace Alta.UseCases.Interactors
             await _loggingRepository.InsertLogAsync(new Log());
 
             await _primeClient.SendMessage(uri, createLineInventoryDTO);
-
+            //await _publishEndpoint.Publish("Publicado");
             //Map DTO to Entity and insert into Mongo
             await _createLineInventoryRepository.Insert(_mapper.Map<CreateLineInventory>(createLineInventoryDTO));
             await Task.CompletedTask;

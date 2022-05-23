@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Alta.Authentication\Alta.Authentication.csproj" />
     <ProjectReference Include="..\..\..\..\Alta.Mongo\Alta.Mongo.csproj" />
+    <ProjectReference Include="..\..\..\..\Alta.RabbitMQ\Alta.RabbitMQ.csproj" />
     <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj" />
     <ProjectReference Include="..\..\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj" />
   </ItemGroup>

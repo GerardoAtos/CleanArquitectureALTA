@@ -6,6 +6,7 @@ using Alta.EFCore;
 using Alta.Authentication;
 using Microsoft.Extensions.Configuration;
 using Alta.Mongo;
+using Alta.RabbitMQ;
 
 namespace Alta.IoC
 {
@@ -19,6 +20,7 @@ namespace Alta.IoC
             services.AddCookieAuthentication();
             services.AddEF(configuration);
             services.AddMongo(configuration);
+            services.AddMassTransitWithRabbitMq();
             return services;
         }
     }

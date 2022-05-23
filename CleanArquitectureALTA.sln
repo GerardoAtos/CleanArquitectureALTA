@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Authentication", "Alta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alta.Mongo", "Alta.Mongo\Alta.Mongo.csproj", "{9751A117-736C-4FE7-82FD-143B7F06B8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alta.RabbitMQ", "Alta.RabbitMQ\Alta.RabbitMQ.csproj", "{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9751A117-736C-4FE7-82FD-143B7F06B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{BFEBDFE2-9FBC-4C59-A5E9-3173B86A9681} = {DD9D73F0-FD9B-4EF9-B678-C244E3BB251D}
 		{0F47F33B-2848-466F-B3BC-FD36E356770A} = {BFEBDFE2-9FBC-4C59-A5E9-3173B86A9681}
 		{9751A117-736C-4FE7-82FD-143B7F06B8EF} = {16EEB3FA-C41B-489E-92B2-820737CE61C1}
+		{6AE0808A-2B3C-4197-9BC6-1B3DF785A8A6} = {16EEB3FA-C41B-489E-92B2-820737CE61C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF470B94-87CF-4BF7-9D63-082C290BAE46}

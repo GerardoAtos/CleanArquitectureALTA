@@ -14,6 +14,7 @@ namespace Alta.Presenters
             services.AddScoped<IMovementConfirmOutputPort, MovementConfirmPresenter>();
             services.AddScoped<IRequestInitiateOutputPort, RequestInitiatePresenter>();
             services.AddScoped<ILoginOutputPort, LoginPresenter>();
+
             return services;
         }
     }
