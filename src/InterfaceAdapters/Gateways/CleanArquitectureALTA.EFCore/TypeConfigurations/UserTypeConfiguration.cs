@@ -1,11 +1,6 @@
 ﻿using Alta.Entities.POCOs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Alta.EFCore.TypeConfigurations
 {
@@ -20,9 +15,6 @@ namespace Alta.EFCore.TypeConfigurations
             builder.Property(x => x.IsActive).IsRequired();
             builder.Property(x => x.CreationDate).HasDefaultValueSql("getdate()");
             builder.Property(x => x.Comment).HasColumnType("varchar(200)");
-
-
-
         }
     }
 }

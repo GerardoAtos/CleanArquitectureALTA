@@ -21,10 +21,10 @@ namespace Alta.EFCore.DataContext
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AltaContext).Assembly);
         }
 
-        public DbSet<RequestInitiate> RequestInitiate { get; set; }
-        public DbSet<HeartBeatInitiate> HeartbeatInitiate { get; set; }
-        public DbSet<DataFromPrime> DataFromPrime { get; set; }
-        public DbSet<DataToPrime> DataToPrime { get; set; }
+        //public DbSet<RequestInitiate> RequestInitiate { get; set; }
+       // public DbSet<HeartBeatInitiate> HeartbeatInitiate { get; set; }
+       // public DbSet<DataFromPrime> DataFromPrime { get; set; }
+        // public DbSet<DataToPrime> DataToPrime { get; set; }
         public DbSet<User> User { get; set; }
 
     }
