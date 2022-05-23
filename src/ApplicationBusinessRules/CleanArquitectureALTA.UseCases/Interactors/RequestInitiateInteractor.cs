@@ -7,6 +7,7 @@ using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using AutoMapper;
+using MassTransit;
 using Microsoft.Extensions.Options;
 
 namespace Alta.UseCases.Interactors
@@ -19,11 +20,12 @@ namespace Alta.UseCases.Interactors
         private readonly IRequestInitiateRepository _requestInitiateRepository;
         private readonly PrimeWsOptions _primeWsOptions;
         private readonly IMapper _mapper;
+        private readonly IPublishEndpoint _publishEndpoint;
 
         public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository logger, 
-                                        IPrimeClient primeClient, IRequestInitiateRepository requestInitiateRepository, IOptions<PrimeWsOptions> primeWsOptions, IMapper mapper) =>
-            (_logger, _requestInitiateOutputPort, _primeClient, _requestInitiateRepository, _primeWsOptions, _mapper) 
-            = (logger, requestinitiateoutputport, primeClient, requestInitiateRepository, primeWsOptions.Value, mapper);
+                                        IPrimeClient primeClient, IRequestInitiateRepository requestInitiateRepository, IOptions<PrimeWsOptions> primeWsOptions, IMapper mapper, IPublishEndpoint publishEndpoint) =>
+            (_logger, _requestInitiateOutputPort, _primeClient, _requestInitiateRepository, _primeWsOptions, _mapper, _publishEndpoint) 
+            = (logger, requestinitiateoutputport, primeClient, requestInitiateRepository, primeWsOptions.Value, mapper, publishEndpoint);
 
         public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
@@ -35,6 +37,7 @@ namespace Alta.UseCases.Interactors
 
             //Map DTO to Entity and insert into MongoDb
             await _requestInitiateRepository.Insert(_mapper.Map<RequestInitiate>(requestInitiateDTO));
+            await _publishEndpoint.Publish<RequestInitiateDTO>(requestInitiateDTO);
             await Task.CompletedTask;
         }
     }

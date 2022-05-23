@@ -6,6 +6,7 @@ using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using AutoMapper;
+using MassTransit;
 using Microsoft.Extensions.Options;
 
 namespace Alta.UseCases.Interactors
@@ -17,10 +18,11 @@ namespace Alta.UseCases.Interactors
         private readonly PrimeWsOptions _primeWsOptions;
         private readonly IHeartBeatInitiateRepository _heartBeatInitiateRepository;
         private readonly IMapper _mapper;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public HeartBeatInitiateInteractor(ILoggingRepository logger, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IHeartBeatInitiateRepository heartBeatInitiateRepository, IMapper mapper) =>
-                (_logger, _primeClient, _primeWsOptions, _heartBeatInitiateRepository, _mapper) = 
-                (logger, primeClient, options.Value, heartBeatInitiateRepository, mapper);
+        public HeartBeatInitiateInteractor(ILoggingRepository logger, IPrimeClient primeClient, IOptions<PrimeWsOptions> options, IHeartBeatInitiateRepository heartBeatInitiateRepository, IMapper mapper, IPublishEndpoint publishEndpoint) =>
+                (_logger, _primeClient, _primeWsOptions, _heartBeatInitiateRepository, _mapper, _publishEndpoint) = 
+                (logger, primeClient, options.Value, heartBeatInitiateRepository, mapper, publishEndpoint);
         
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
@@ -32,6 +34,7 @@ namespace Alta.UseCases.Interactors
 
             //Map DTO to Entity and insert into MongoDb
             await _heartBeatInitiateRepository.Insert(_mapper.Map<HeartBeatInitiate>(heartBeatInitiateDTO));
+            await _publishEndpoint.Publish<HeartBeatInitiateDTO>(heartBeatInitiateDTO);
             await Task.CompletedTask;
         }
     }
