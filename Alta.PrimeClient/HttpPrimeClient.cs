@@ -18,12 +18,11 @@ namespace Alta.PrimeClient
     {
         private readonly HttpClient _httpClient;
         private readonly PrimeWsOptions _primeWsOptions;
-        
+
         public HttpPrimeClient(IOptions<PrimeWsOptions> options)
         {
             _httpClient = new HttpClient();
             _primeWsOptions = options.Value;
-
             _httpClient.BaseAddress = new Uri(_primeWsOptions.Url);
         }
 
@@ -31,7 +30,6 @@ namespace Alta.PrimeClient
         {
             var result = await _httpClient.PostAsync(_primeWsOptions.Endpoints["Authentication"], new StringContent(_primeWsOptions.Credentials.ToJson()));
 
-            
             return await result.ToResult();
         }
 
@@ -39,17 +37,30 @@ namespace Alta.PrimeClient
         {
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
 
-            var result = await _httpClient.PostAsync(uri, content);
-
-            /*var retryPolicy = Policy.Handle<Exception>()
-                .Retry(retryCount: 3, 
-                onRetry: (exception, attemptNumber) =>
+            //.WaitAndRetryAsync(3, i => TimeSpan.FromSeconds(15))
+            var retryPolicy = Policy
+                .Handle<HttpRequestException>().CircuitBreakerAsync(3, TimeSpan.FromSeconds(10),
+                (ex, t) =>
                 {
-                    //Change something to try to fix the problem		speed -= 5;
-                });
-            */
+                    Console.WriteLine("Circuit broken.");
+                }, 
+                () =>
+                {
+                    Console.WriteLine("Circuit reset.");
+                }); 
 
-            return await result.ToResult(dto);
+            return await retryPolicy.ExecuteAsync(async () =>
+            {
+                //https://pollytst.free.beeceptor.com/api/delaysixseconds
+                //Console.WriteLine("reintentandooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo");
+                var result = await _httpClient.PostAsync("https://pollytst.free.beeceptor.com/api/delaysixseconds", content);
+                Console.WriteLine($"{retryPolicy.CircuitState}");
+                //var result = await _httpClient.PostAsync(uri, content);
+                result.EnsureSuccessStatusCode();
+
+                return await result.ToResult(dto);
+            });
+
         }
     }
 }
