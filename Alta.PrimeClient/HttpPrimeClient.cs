@@ -10,6 +10,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Alta.Utils;
+using Polly;
 
 namespace Alta.PrimeClient
 {
@@ -17,6 +18,7 @@ namespace Alta.PrimeClient
     {
         private readonly HttpClient _httpClient;
         private readonly PrimeWsOptions _primeWsOptions;
+        
         public HttpPrimeClient(IOptions<PrimeWsOptions> options)
         {
             _httpClient = new HttpClient();
@@ -28,6 +30,7 @@ namespace Alta.PrimeClient
         public async Task<TransactionResult> Authenticate()
         {
             var result = await _httpClient.PostAsync(_primeWsOptions.Endpoints["Authentication"], new StringContent(_primeWsOptions.Credentials.ToJson()));
+
             
             return await result.ToResult();
         }
@@ -37,6 +40,14 @@ namespace Alta.PrimeClient
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
 
             var result = await _httpClient.PostAsync(uri, content);
+
+            /*var retryPolicy = Policy.Handle<Exception>()
+                .Retry(retryCount: 3, 
+                onRetry: (exception, attemptNumber) =>
+                {
+                    //Change something to try to fix the problem		speed -= 5;
+                });
+            */
 
             return await result.ToResult(dto);
         }

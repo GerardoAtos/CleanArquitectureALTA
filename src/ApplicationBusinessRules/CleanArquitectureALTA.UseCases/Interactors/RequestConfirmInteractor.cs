@@ -14,9 +14,9 @@ namespace Alta.UseCases.Interactors
         private readonly ILoadErrorRepository _loadErrorRepository;
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _publishEndpoint;
-        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository, IMapper mapper) => 
-            (_loadDetailRepository, _loadErrorRepository, _mapper) = 
-            (loadDetailRepository, loadErrorRepository, mapper);
+        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository, IMapper mapper, IPublishEndpoint publishEndpoint) => 
+            (_loadDetailRepository, _loadErrorRepository, _mapper, _publishEndpoint) = 
+            (loadDetailRepository, loadErrorRepository, mapper, publishEndpoint);
 
         public async Task Handle(RequestConfirmDTO requestConfirmDTO)
         {
