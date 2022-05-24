@@ -33,31 +33,23 @@ namespace Alta.PrimeClient
             return await result.ToResult();
         }
 
+        IAsyncPolicy circuitBreakerPolicy = Policy
+            .Handle<Exception>().CircuitBreakerAsync(
+                exceptionsAllowedBeforeBreaking: 3,
+                onBreak: (exception, timespan) => { Console.WriteLine("Break"); },
+                onReset: () => { Console.WriteLine("Reset"); },
+                onHalfOpen: () => { Console.WriteLine("Half opened"); },
+                durationOfBreak: TimeSpan.FromSeconds(5));
+
         public async Task<TransactionResult> SendMessage(string uri, DtoBase dto)
         {
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
-
-            //.WaitAndRetryAsync(3, i => TimeSpan.FromSeconds(15))
             var retryPolicy = Policy
-                .Handle<HttpRequestException>().CircuitBreakerAsync(3, TimeSpan.FromSeconds(10),
-                (ex, t) =>
-                {
-                    Console.WriteLine("Circuit broken.");
-                }, 
-                () =>
-                {
-                    Console.WriteLine("Circuit reset.");
-                }); 
-
+                .Handle<HttpRequestException>().WaitAndRetryAsync(4, i => TimeSpan.FromSeconds(7), onRetry: (exeption, timespan, atempt) => { Console.WriteLine($"Reintentando"); }).WrapAsync(circuitBreakerPolicy);
             return await retryPolicy.ExecuteAsync(async () =>
             {
-                //https://pollytst.free.beeceptor.com/api/delaysixseconds
-                //Console.WriteLine("reintentandooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo");
-                var result = await _httpClient.PostAsync("https://pollytst.free.beeceptor.com/api/delaysixseconds", content);
-                Console.WriteLine($"{retryPolicy.CircuitState}");
-                //var result = await _httpClient.PostAsync(uri, content);
+                var result = await _httpClient.PostAsync("https://pollytest.free.beeceptor.com/api/delaysixseconds", content);
                 result.EnsureSuccessStatusCode();
-
                 return await result.ToResult(dto);
             });
 
