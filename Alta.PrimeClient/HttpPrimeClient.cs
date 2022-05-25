@@ -45,6 +45,7 @@ namespace Alta.PrimeClient
                 .Handle<HttpRequestException>().WaitAndRetryAsync(4, i => TimeSpan.FromSeconds(7), 
                 onRetry: (exeption, timespan, atempt) => { Console.WriteLine($"Reintentando"); })
                 .WrapAsync(circuitBreakerPolicy);
+
             return await retryPolicy.ExecuteAsync(async () =>
             {
                 var result = await _httpClient.PostAsync("https://pollytest.free.beeceptor.com/api/delaysixseconds", content);

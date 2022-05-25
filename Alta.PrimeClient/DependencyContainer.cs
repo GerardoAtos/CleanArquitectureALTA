@@ -11,6 +11,7 @@ namespace Alta.PrimeClient
         {
             services.AddScoped<ILoggingRepository, ConsoleLoggingRepository>();
             services.AddScoped<IPrimeClient, HttpPrimeClient>();
+            services.AddHttpClient<IPrimeClient, HttpPrimeClient>();
 
             services.Configure<PrimeWsOptions>(configuration.GetSection(PrimeWsOptions.PrimeWs));
             return services;
