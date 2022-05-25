@@ -14,7 +14,6 @@ namespace Alta.PrimeClient
         public static IServiceCollection AddPrimeClientServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<ILoggingRepository, ConsoleLoggingRepository>();
-            services.AddScoped<IPrimeClient, HttpPrimeClient>();
             AddClientWithPolicies(services);
             services.Configure<PrimeWsOptions>(configuration.GetSection(PrimeWsOptions.PrimeWs));
             return services;
@@ -29,20 +28,21 @@ namespace Alta.PrimeClient
               retryAttempt => TimeSpan.FromSeconds(Math.Pow(2,retryAttempt)) + TimeSpan.FromMilliseconds(jitterer.Next(0,1000)),
               onRetry: (outcome, timeSpan, retryAttempt) =>
               {
-                  //onretry to do
-                  Console.WriteLine("Retry");
+                  Console.WriteLine("reintentando");
               }
             )).AddTransientHttpErrorPolicy(builder =>
           builder.Or<TimeoutRejectedException>().CircuitBreakerAsync(3,
           TimeSpan.FromSeconds(15),
           onBreak: (outcome, timeSpan) =>
           {
-              //onbreak to do 
-              Console.WriteLine("Break");
+              Console.WriteLine("si trono");
+          },
+          onHalfOpen: () =>
+          {
+              Console.WriteLine("Medio abierto");
           },
           onReset: () =>
           {
-              //onreset to do 
               Console.WriteLine("Reset");
           }
           )).AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));

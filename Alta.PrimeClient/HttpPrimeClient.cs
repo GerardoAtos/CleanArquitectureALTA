@@ -16,9 +16,9 @@ namespace Alta.PrimeClient
         private readonly HttpClient _httpClient;
         private readonly PrimeWsOptions _primeWsOptions;
 
-        public HttpPrimeClient(IOptions<PrimeWsOptions> options)
+        public HttpPrimeClient(IOptions<PrimeWsOptions> options, HttpClient httpclient)
         {
-            _httpClient = new HttpClient();
+            _httpClient = httpclient;
             _primeWsOptions = options.Value;
             _httpClient.BaseAddress = new Uri(_primeWsOptions.Url);
         }
@@ -30,29 +30,15 @@ namespace Alta.PrimeClient
             return await result.ToResult();
         }
 
-        IAsyncPolicy circuitBreakerPolicy = Policy
-            .Handle<Exception>().CircuitBreakerAsync(
-                exceptionsAllowedBeforeBreaking: 3,
-                onBreak: (exception, timespan) => { Console.WriteLine("Break"); },
-                onReset: () => { Console.WriteLine("Reset"); },
-                onHalfOpen: () => { Console.WriteLine("Half opened"); },
-                durationOfBreak: TimeSpan.FromSeconds(5));
-
         public async Task<TransactionResult> SendMessage(string uri, DtoBase dto)
         {
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
-            var retryPolicy = Policy
-                .Handle<HttpRequestException>().WaitAndRetryAsync(4, i => TimeSpan.FromSeconds(7), 
-                onRetry: (exeption, timespan, atempt) => { Console.WriteLine($"Reintentando"); })
-                .WrapAsync(circuitBreakerPolicy);
 
-            return await retryPolicy.ExecuteAsync(async () =>
-            {
-                var result = await _httpClient.PostAsync("https://pollytest.free.beeceptor.com/api/delaysixseconds", content);
-                result.EnsureSuccessStatusCode();
-                return await result.ToResult(dto);
-            });
+            //var result = await _httpClient.PostAsync("https://pollytest.free.beeceptor.com/api/delaysixseconds", content);
+            var result = await _httpClient.PostAsync(uri, content);
 
+
+            return await result.ToResult(dto);
         }
     }
 }
