@@ -12,7 +12,6 @@ namespace Alta.Entities.POCOs
         public LOAD_DETAIL_CTRLSEG CTRL_SEG { get; set; }
     }
 
-
     public class LOAD_DETAIL_CTRLSEG
     {
         public long TRANID { get; set; }

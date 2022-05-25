@@ -9,17 +9,18 @@ namespace Alta.UseCases.Interactors
     {
         private readonly ILoginOutputPort _loginOutputPort;
         private readonly IUserLoginRepository _loginRepository;
-        public LoginInteractor(ILoginOutputPort loginOutputPort, IUserLoginRepository loginRepository)
-             => (_loginOutputPort, _loginRepository) = (loginOutputPort, loginRepository);
+
+        public LoginInteractor(
+            ILoginOutputPort loginOutputPort,
+            IUserLoginRepository loginRepository
+        ) => (_loginOutputPort, _loginRepository) = (loginOutputPort, loginRepository);
 
         public async Task Handle(UserDTO user)
         {
-           bool exists = await _loginRepository.ExistsUserAsync(user.username, user.password);
-           
-           //Returns user dto and if it exists
-           await _loginOutputPort.Handle(user, exists);
-        }
-        
+            bool exists = await _loginRepository.ExistsUserAsync(user.Username, user.Password);
 
+            //Returns user dto and if it exists
+            await _loginOutputPort.Handle(user, exists);
+        }
     }
 }

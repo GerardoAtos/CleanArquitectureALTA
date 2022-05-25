@@ -12,8 +12,10 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
     public class MovementConfirmController : ControllerBase
     {
         private readonly IMovementConfirmInputPort _movementConfirmInputPort;
-        public MovementConfirmController(IMovementConfirmInputPort movementConfirmInputPort) => 
+
+        public MovementConfirmController(IMovementConfirmInputPort movementConfirmInputPort) =>
             (_movementConfirmInputPort) = (movementConfirmInputPort);
+
 
         [HttpPost("MOVEMENT_CONFIRM")]
         public async Task<IActionResult> MovementConfirm(MovementConfirmDTO data)

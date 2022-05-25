@@ -6,10 +6,6 @@ namespace Alta.UseCases.Interactors
 {
     public class AltaWSInteractor : IAltaWSInputPort
     {
-        
-        public Task Handle(DtoBase dto)
-        {
-            return Task.CompletedTask;
-        }
+        public Task Handle(DtoBase dto) => Task.CompletedTask;
     }
 }

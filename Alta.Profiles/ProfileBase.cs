@@ -2,8 +2,5 @@
 
 namespace Alta.Profiles
 {
-    public abstract class ProfileBase : Profile
-    {
-        
-    }
+    public abstract class ProfileBase : Profile { }
 }

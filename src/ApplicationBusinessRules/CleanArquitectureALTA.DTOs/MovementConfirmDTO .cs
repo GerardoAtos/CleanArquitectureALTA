@@ -1,6 +1,5 @@
 ﻿using Alta.DTOs.DtoAbstraction;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace Alta.DTOs
 {
@@ -12,7 +11,6 @@ namespace Alta.DTOs
 
     public class CTRLSEGMovementConfirm : CTRLSEGAbstractBase
     {
-
         [JsonPropertyName("MOVE_CONF_SEG")]
         public MOVECONFSEG MOVECONFSEG { get; set; }
     }

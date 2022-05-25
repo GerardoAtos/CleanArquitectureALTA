@@ -12,8 +12,10 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
     public class RequestInitiateController : ControllerBase
     {
         private readonly IRequestInitiateInputPort _requestInitiateInputPort;
-        public RequestInitiateController(IRequestInitiateInputPort requestInitiateInputPort) => 
+
+        public RequestInitiateController(IRequestInitiateInputPort requestInitiateInputPort) =>
             (_requestInitiateInputPort) = (requestInitiateInputPort);
+
 
         [HttpPost("REQUEST_INITIATE")]
         public async Task<IActionResult> RequestInitiate(RequestInitiateDTO data)

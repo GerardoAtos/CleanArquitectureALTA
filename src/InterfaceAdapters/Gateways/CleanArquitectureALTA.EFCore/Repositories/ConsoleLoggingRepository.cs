@@ -9,7 +9,6 @@ namespace Alta.EFCore.Repositories
 {
     public class ConsoleLoggingRepository : ILoggingRepository
     {
-
         private readonly IPublishEndpoint _publishEndpoint;
 
         public ConsoleLoggingRepository(IPublishEndpoint publishEndpoint)

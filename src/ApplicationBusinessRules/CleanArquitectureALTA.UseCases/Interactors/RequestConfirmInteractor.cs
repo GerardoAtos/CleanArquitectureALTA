@@ -14,23 +14,35 @@ namespace Alta.UseCases.Interactors
         private readonly ILoadErrorRepository _loadErrorRepository;
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _publishEndpoint;
-        public RequestConfirmInteractor(ILoadDetailRepository loadDetailRepository, ILoadErrorRepository loadErrorRepository, IMapper mapper, IPublishEndpoint publishEndpoint) => 
-            (_loadDetailRepository, _loadErrorRepository, _mapper, _publishEndpoint) = 
-            (loadDetailRepository, loadErrorRepository, mapper, publishEndpoint);
+
+        public RequestConfirmInteractor(
+            ILoadDetailRepository loadDetailRepository,
+            ILoadErrorRepository loadErrorRepository,
+            IMapper mapper,
+            IPublishEndpoint publishEndpoint
+        ) =>
+            (_loadDetailRepository, _loadErrorRepository, _mapper, _publishEndpoint) = (
+                loadDetailRepository,
+                loadErrorRepository,
+                mapper,
+                publishEndpoint
+            );
 
         public async Task Handle(RequestConfirmDTO requestConfirmDTO)
         {
-            //Map DTO to Entity and insert into Mongo
             //TODO REMOVE IF's
             if (requestConfirmDTO is LoadDetailDTO)
             {
-                await _loadDetailRepository.Insert(_mapper.Map<LoadDetail>((LoadDetailDTO)requestConfirmDTO));
+                await _loadDetailRepository.Insert(
+                    _mapper.Map<LoadDetail>((LoadDetailDTO)requestConfirmDTO)
+                );
                 await _publishEndpoint.Publish<LoadDetailDTO>(requestConfirmDTO);
             }
-
             else if (requestConfirmDTO is LoadErrorDTO)
             {
-                await _loadErrorRepository.Insert(_mapper.Map<LoadError>((LoadErrorDTO)requestConfirmDTO));
+                await _loadErrorRepository.Insert(
+                    _mapper.Map<LoadError>((LoadErrorDTO)requestConfirmDTO)
+                );
                 await _publishEndpoint.Publish<LoadErrorDTO>(requestConfirmDTO);
             }
         }

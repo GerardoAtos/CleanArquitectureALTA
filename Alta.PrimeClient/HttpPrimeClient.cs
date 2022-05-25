@@ -7,7 +7,6 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Alta.Utils;
-using Polly;
 
 namespace Alta.PrimeClient
 {

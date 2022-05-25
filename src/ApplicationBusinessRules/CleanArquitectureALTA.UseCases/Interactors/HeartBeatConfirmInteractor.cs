@@ -16,15 +16,27 @@ namespace Alta.UseCases.Interactors
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _publishEndpoint;
 
-        public HeartBeatConfirmInteractor(ILoggingRepository logger, IHeartBeatConfirmRepository heartBeatConfirmRepository, IMapper mapper, IPublishEndpoint publishEndpoint)
-            => (_logger, _heartBeatConfirmRepository, _mapper, _publishEndpoint) = (logger, heartBeatConfirmRepository, mapper, _publishEndpoint);
+        public HeartBeatConfirmInteractor(
+            ILoggingRepository logger,
+            IHeartBeatConfirmRepository heartBeatConfirmRepository,
+            IMapper mapper,
+            IPublishEndpoint publishEndpoint
+        ) =>
+            (_logger, _heartBeatConfirmRepository, _mapper, _publishEndpoint) = (
+                logger,
+                heartBeatConfirmRepository,
+                mapper,
+                _publishEndpoint
+            );
 
         public async Task Handle(HeartBeatConfirmDTO heartBeatConfirmDto)
         {
-            await _logger.InsertLogAsync(new Log {Description = "hola"}); //TODO Definir el log
+            await _logger.InsertLogAsync(new Log { Description = "Hearbeat confirm log." });
 
             //Map DTO to Entity and insert into Mongo
-            await _heartBeatConfirmRepository.Insert(_mapper.Map<HeartBeatConfirm>(heartBeatConfirmDto));
+            await _heartBeatConfirmRepository.Insert(
+                _mapper.Map<HeartBeatConfirm>(heartBeatConfirmDto)
+            );
             await _publishEndpoint.Publish<HeartBeatConfirmDTO>(heartBeatConfirmDto);
         }
     }

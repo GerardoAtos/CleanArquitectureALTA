@@ -17,7 +17,7 @@ namespace Alta.Presenters.Presenters
             UserExistance = userExistance;
 
             var userClaims = new List<Claim>(){
-                    new Claim(ClaimTypes.Name, user.username)
+                    new Claim(ClaimTypes.Name, user.Username)
                 };
 
             var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");

@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using Alta.DTOs.DtoAbstraction;
 
 namespace Alta.DTOs
 {
@@ -19,7 +18,7 @@ namespace Alta.DTOs
 
     public class LOAD_DETAIL_CTRLSEG
     {
-        [JsonPropertyName("TRANID")] // "Trainid": 2222222 
+        [JsonPropertyName("TRANID")]
         public long Tranid { get; set; }
 
         [JsonPropertyName("TRANDT")]

@@ -1,7 +1,4 @@
-﻿
-namespace Alta.Entities.POCOs.Abstractions
+﻿namespace Alta.Entities.POCOs.Abstractions
 {
-    public abstract class RequestConfirm : Entity
-    {
-    }
+    public abstract class RequestConfirm : Entity { }
 }

@@ -14,7 +14,6 @@ namespace Alta.Mongo.Repositories
 
         public RequestInitiateRepository(IMongoContext context) => (_context, Collection) = (context, context.GetCollectionByKey<RequestInitiate>(Name));
 
-
         public async Task Insert(RequestInitiate requestInitiate)
         {
             await Collection.InsertOneAsync(requestInitiate);

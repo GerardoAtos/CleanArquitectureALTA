@@ -1,5 +1,4 @@
-﻿
-using Alta.Presenters.Presenters;
+﻿using Alta.Presenters.Presenters;
 using Alta.UseCasesPorts.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 

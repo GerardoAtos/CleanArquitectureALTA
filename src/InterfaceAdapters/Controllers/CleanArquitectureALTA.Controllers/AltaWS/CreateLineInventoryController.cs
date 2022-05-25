@@ -11,11 +11,12 @@ namespace Alta.Controllers.AltaWS
     [ApiController]
     public class CreateLineInventoryController : ControllerBase
     {
-
         private readonly ICreateLineInventoryInputPort _createLineInventoryInputPort;
 
-        public CreateLineInventoryController(ICreateLineInventoryInputPort createLineInventoryInputPort) =>
-            (_createLineInventoryInputPort) = (createLineInventoryInputPort);
+        public CreateLineInventoryController(
+            ICreateLineInventoryInputPort createLineInventoryInputPort
+        ) => (_createLineInventoryInputPort) = (createLineInventoryInputPort);
+
 
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)

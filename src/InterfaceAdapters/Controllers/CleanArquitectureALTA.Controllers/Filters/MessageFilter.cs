@@ -20,18 +20,17 @@ namespace Alta.Controllers.Filters
                 ("LOAD_ERROR", typeof(LoadErrorDTO))};
             
             DtoBase dto;
+
             foreach (var (property, dtoType) in posibles)
             {
                 if (Has(property))
                 {
                     dto = (DtoBase)JsonSerializer.Deserialize(json.ToString(), dtoType);
-                    //dto = json.ToString().FromJson<DtoBase>(dtoType);
                     context.HttpContext.Items["data"] = dto;
                 }
             }
 
             await next();
-
         }
     }
 }

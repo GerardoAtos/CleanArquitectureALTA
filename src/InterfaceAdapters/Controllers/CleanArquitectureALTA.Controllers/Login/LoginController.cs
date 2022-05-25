@@ -39,14 +39,6 @@ namespace Alta.Controllers.Login
         }
 
 
-
-        //Revisar si es necesario
-        [HttpGet("/username/{username}/password/{password}")]
-        public async Task<IActionResult> LoginByUsernameAndPassword(string username, string password)
-        {
-            return null;
-        }
-
         [Authorize]
         [HttpGet("/CheckLogin")]
         public async Task<IActionResult> CheckLogin()

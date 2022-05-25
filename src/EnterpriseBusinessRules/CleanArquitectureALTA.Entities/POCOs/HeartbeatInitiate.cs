@@ -1,5 +1,4 @@
-﻿
-using Alta.Entities.POCOs.Abstractions;
+﻿using Alta.Entities.POCOs.Abstractions;
 
 namespace Alta.Entities.POCOs
 {

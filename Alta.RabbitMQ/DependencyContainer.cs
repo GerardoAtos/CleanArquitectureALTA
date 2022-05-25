@@ -13,7 +13,6 @@ namespace Alta.RabbitMQ
         
        
     {
-       
         public static IServiceCollection AddMassTransitWithRabbitMq(this IServiceCollection services)
         {
             services.AddMassTransit(configure =>
@@ -36,8 +35,6 @@ namespace Alta.RabbitMQ
 
             services.AddMassTransitHostedService();
          
-            
-
             return services;
         }
     }

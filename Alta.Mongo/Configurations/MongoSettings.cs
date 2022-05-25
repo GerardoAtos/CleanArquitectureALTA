@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alta.Mongo.Configurations
+﻿namespace Alta.Mongo.Configurations
 {
-    public class MongoSettings
-    {
-
-    }
+    public class MongoSettings { }
 }

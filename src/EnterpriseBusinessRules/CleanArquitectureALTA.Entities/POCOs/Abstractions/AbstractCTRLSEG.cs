@@ -1,5 +1,4 @@
-﻿
-namespace Alta.Entities.POCOs.Abstractions
+﻿namespace Alta.Entities.POCOs.Abstractions
 {
     public  class AbstractCTRLSEG
     {

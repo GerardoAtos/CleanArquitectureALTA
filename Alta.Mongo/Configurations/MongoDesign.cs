@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace Alta.Mongo.Configurations
 {
-    public class MongoDesign
-    {
-
-    }
+    public class MongoDesign { }
 }
