@@ -2,10 +2,7 @@
 using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
@@ -45,7 +42,9 @@ namespace Alta.PrimeClient
         {
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
             var retryPolicy = Policy
-                .Handle<HttpRequestException>().WaitAndRetryAsync(4, i => TimeSpan.FromSeconds(7), onRetry: (exeption, timespan, atempt) => { Console.WriteLine($"Reintentando"); }).WrapAsync(circuitBreakerPolicy);
+                .Handle<HttpRequestException>().WaitAndRetryAsync(4, i => TimeSpan.FromSeconds(7), 
+                onRetry: (exeption, timespan, atempt) => { Console.WriteLine($"Reintentando"); })
+                .WrapAsync(circuitBreakerPolicy);
             return await retryPolicy.ExecuteAsync(async () =>
             {
                 var result = await _httpClient.PostAsync("https://pollytest.free.beeceptor.com/api/delaysixseconds", content);
