@@ -1,0 +1,588 @@
+﻿++Solution 'CleanArquitectureALTA' ‎(15 of 15 projects)
+i:{00000000-0000-0000-0000-000000000000}:CleanArquitectureALTA.sln
+++src
+i:{00000000-0000-0000-0000-000000000000}:src
+++ApplicationBusinessRules
+i:{5df9561d-953f-4adf-9113-24c8417201c3}:ApplicationBusinessRules
+++Alta.DTOs
+i:{460f1cc2-78f4-4658-8129-0fa4879f5801}:Alta.DTOs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\bin\debug\net5.0\alta.dtos.dll
+++Dependencies
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:>824
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:>1332
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:>1189
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:>1447
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:>774
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:>1540
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:>2128
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:>1748
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:>808
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:>915
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:>1058
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:>914
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>1657
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>1928
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>1817
+++DtoAbstraction
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\dtoabstraction\
+++CTRLSEGAbstractBase.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\dtoabstraction\ctrlsegabstractbase.cs
+++DtoBase.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\dtoabstraction\dtobase.cs
+++HttpDTOs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\httpdtos\
+++CreateLineInventoryDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\createlineinventorydto.cs
+++HeartBeatConfirmDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\heartbeatconfirmdto.cs
+++HeartBeatInitiateDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\heartbeatinitiatedto.cs
+++LoadDetailDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\loaddetaildto.cs
+++LoadErrorDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\loaderrordto.cs
+++MovementConfirmDTO .cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\movementconfirmdto .cs
+++RequestConfirmDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\requestconfirmdto.cs
+++RequestInitiateDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\requestinitiatedto.cs
+++SavePrimeDataDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\saveprimedatadto.cs
+++UserDTO.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\userdto.cs
+++Analyzers
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:analyzers
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:analyzers
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:analyzers
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:analyzers
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:analyzers
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:analyzers
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:analyzers
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:analyzers
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:analyzers
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:analyzers
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:analyzers
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:analyzers
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:analyzers
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:analyzers
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:analyzers
+++Frameworks
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:frameworks
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:frameworks
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:frameworks
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:frameworks
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:frameworks
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:frameworks
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:frameworks
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:frameworks
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:frameworks
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:frameworks
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:frameworks
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:frameworks
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:frameworks
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:frameworks
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:frameworks
+++Packages
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:packages
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:packages
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:packages
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:packages
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:packages
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:packages
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:packages
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:packages
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:packages
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:packages
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:packages
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:packages
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:packages
+++TransactionResult.cs
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\httpdtos\transactionresult.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.NETCore.App
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.dtos\microsoft.netcore.app
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\microsoft.netcore.app
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\microsoft.netcore.app
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\microsoft.netcore.app
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\microsoft.netcore.app
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:c:\users\alexd\cleanarquitecturealta\alta.utils\microsoft.netcore.app
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\microsoft.netcore.app
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:c:\users\alexd\cleanarquitecturealta\alta.authentication\microsoft.netcore.app
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\microsoft.netcore.app
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\microsoft.netcore.app
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\microsoft.netcore.app
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.ioc\microsoft.netcore.app
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\microsoft.netcore.app
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\microsoft.netcore.app
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\users\alexd\cleanarquitecturealta\alta.rabbitmq\microsoft.netcore.app
+++System.Runtime (4.3.1)
+i:{a217be7c-4670-42cf-8042-c1f42f2b5a71}:>2233
+++Alta.UseCases
+i:{460f1cc2-78f4-4658-8129-0fa4879f5801}:Alta.UseCases
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\bin\debug\net5.0\alta.usecases.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\bin\debug\net5.0\alta.usecases.dll
+++Interactors
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\
+++AltaWSInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\altawsinteractor.cs
+++CreateLineInventoryInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\createlineinventoryinteractor.cs
+++HeartBeatConfirmInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\heartbeatconfirminteractor.cs
+++HeartBeatInitiateInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\heartbeatinitiateinteractor.cs
+++LoginInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\logininteractor.cs
+++MovementConfirmInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\movementconfirminteractor.cs
+++RequestConfirmInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\requestconfirminteractor.cs
+++RequestInitiateInteractor.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\interactors\requestinitiateinteractor.cs
+++DependencyContainer.cs
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecases\dependencycontainer.cs
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:c:\users\alexd\cleanarquitecturealta\alta.authentication\dependencycontainer.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\dependencycontainer.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\dependencycontainer.cs
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.ioc\dependencycontainer.cs
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\dependencycontainer.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\dependencycontainer.cs
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\users\alexd\cleanarquitecturealta\alta.rabbitmq\dependencycontainer.cs
+++Projects
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:projects
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:projects
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:projects
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:projects
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:projects
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:projects
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:projects
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:projects
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:projects
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:projects
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:projects
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++AutoMapper (11.0.1)
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:>2141
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:>2220
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:>2138
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:>2216
+++MassTransit (7.3.1)
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:>2140
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:>2266
+++Microsoft.Extensions.DependencyInjection.Abstractions (6.0.0)
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:>2139
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:>2178
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:>2257
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2251
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>2213
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>2179
+++Alta.Entities
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\bin\debug\net5.0\alta.entities.dll
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\bin\debug\net5.0\alta.entities.dll
+i:{844c5e19-f6b6-4686-ab6c-380cf5c76f76}:Alta.Entities
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\bin\debug\net5.0\alta.entities.dll
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\bin\debug\net5.0\alta.entities.dll
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\bin\debug\net5.0\alta.entities.dll
+++Alta.Mongo
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\alta.mongo\bin\debug\net5.0\alta.mongo.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\alta.mongo\bin\debug\net5.0\alta.mongo.dll
+i:{16eeb3fa-c41b-489e-92b2-820737ce61c1}:Alta.Mongo
+++Alta.PrimeClient
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\bin\debug\net5.0\alta.primeclient.dll
+i:{16eeb3fa-c41b-489e-92b2-820737ce61c1}:Alta.PrimeClient
+++Alta.Profiles
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\alta.profiles\bin\debug\net5.0\alta.profiles.dll
+i:{460f1cc2-78f4-4658-8129-0fa4879f5801}:Alta.Profiles
+++Alta.UseCasesPorts
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\bin\debug\net5.0\alta.usecasesports.dll
+i:{460f1cc2-78f4-4658-8129-0fa4879f5801}:Alta.UseCasesPorts
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\bin\debug\net5.0\alta.usecasesports.dll
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\bin\debug\net5.0\alta.usecasesports.dll
+++Alta.Utils
+i:{0c6a67bb-57e8-4593-963a-4a801b597166}:c:\users\alexd\cleanarquitecturealta\alta.utils\bin\debug\net5.0\alta.utils.dll
+i:{eef7aefe-42ae-4f7e-828f-f21f8cb3faa0}:Alta.Utils
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\alta.utils\bin\debug\net5.0\alta.utils.dll
+++Interfaces
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\interfaces\
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\interfaces\
+++IAltaWSInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\ialtawsinputport.cs
+++IAuthenticationOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iauthenticationoutputport.cs
+++ICreateLineInventoryInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\icreatelineinventoryinputport.cs
+++ICreateLineInventoryOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\icreatelineinventoryoutputport.cs
+++IHeartBeatConfirmInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iheartbeatconfirminputport.cs
+++IHeartBeatInitiateInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iheartbeatinitiateinputport.cs
+++IHeartBeatInitiateOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iheartbeatinitiateoutputport.cs
+++ILoadDetailInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iloaddetailinputport.cs
+++ILoginInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\ilogininputport.cs
+++ILoginOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\iloginoutputport.cs
+++IMovementConfirmInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\imovementconfirminputport.cs
+++IMovementConfirmOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\imovementconfirmoutputport.cs
+++IOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\ioutputport.cs
+++IRequestConfirmInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\irequestconfirminputport.cs
+++IRequestConfirmOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\irequestconfirmoutputport.cs
+++IRequestInitiateInputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\irequestinitiateinputport.cs
+++IRequestInitiateOutputPort.cs
+i:{b1dc0e80-bede-4b83-8747-03f11d1076d4}:c:\users\alexd\cleanarquitecturealta\src\applicationbusinessrules\cleanarquitecturealta.usecasesports\interfaces\irequestinitiateoutputport.cs
+++CreateLineInventoryProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\createlineinventoryprofile.cs
+++HeartBeatConfirmProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\heartbeatconfirmprofile.cs
+++HeartBeatInitiateProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\heartbeatinitiateprofile.cs
+++LoadDetailProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\loaddetailprofile.cs
+++LoadErrorProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\loaderrorprofile.cs
+++MovementConfirmProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\movementconfirmprofile.cs
+++ProfileBase.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\profilebase.cs
+++RequestInitiateProfile.cs
+i:{cc768d6a-5be5-45e4-8f46-7a890a586d94}:c:\users\alexd\cleanarquitecturealta\alta.profiles\requestinitiateprofile.cs
+++EnterpriseBusinessRules
+i:{5df9561d-953f-4adf-9113-24c8417201c3}:EnterpriseBusinessRules
+++Repositories
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\repositories\
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\
+++ICreateLineInventoryRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\icreatelineinventoryrepository.cs
+++IHeartBeatConfirmRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\iheartbeatconfirmrepository.cs
+++IHeartBeatInitiateRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\iheartbeatinitiaterepository.cs
+++ILoadDetailRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\iloaddetailrepository.cs
+++ILoadErrorRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\iloaderrorrepository.cs
+++IMovementConfirmRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\imovementconfirmrepository.cs
+++IRequestInitiateRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\repositories\irequestinitiaterepository.cs
+++ILoggingRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\iloggingrepository.cs
+++IPrimeClient.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\iprimeclient.cs
+++IUnitOfWork.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\iunitofwork.cs
+++IUserLoginRepository.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\interfaces\iuserloginrepository.cs
+++POCOs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\
+++Abstractions
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\abstractions\
+++CreateLineInventory.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\createlineinventory.cs
+++CTRLSEGAbstract.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\ctrlsegabstract.cs
+++Entity.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\entity.cs
+++ErrorDetails.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\errordetails.cs
+++HeartBeatConfirm.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\heartbeatconfirm.cs
+++HeartbeatInitiate.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\heartbeatinitiate.cs
+++LoadDetail.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\loaddetail.cs
+++LoadError.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\loaderror.cs
+++Log.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\log.cs
+++MovementConfirm.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\movementconfirm.cs
+++RequestInitiate.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\requestinitiate.cs
+++User.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\user.cs
+++AbstractCTRLSEG.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\abstractions\abstractctrlseg.cs
+++RequestConfirm.cs
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:c:\users\alexd\cleanarquitecturealta\src\enterprisebusinessrules\cleanarquitecturealta.entities\pocos\abstractions\requestconfirm.cs
+++MongoDB.Driver (2.15.1)
+i:{975200fc-3a58-41ad-984d-82db1f0c08d2}:>2205
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>2215
+++Utils
+i:{844c5e19-f6b6-4686-ab6c-380cf5c76f76}:Utils
+++JsonExtension.cs
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:c:\users\alexd\cleanarquitecturealta\alta.utils\jsonextension.cs
+++StringExtension.cs
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:c:\users\alexd\cleanarquitecturealta\alta.utils\stringextension.cs
+++Microsoft.AspNetCore.Http.Abstractions (2.2.0)
+i:{981fa105-8a24-42d9-9a6e-c211549c8589}:>2173
+++FrameworksAndDrivers
+i:{5df9561d-953f-4adf-9113-24c8417201c3}:FrameworksAndDrivers
+++UIs
+i:{dd9d73f0-fd9b-4ef9-b678-c244e3bb251d}:UIs
+++Alta.API
+i:{21f65386-0f14-4e02-8de5-3a4b6a311158}:Alta.API
+++Connected Services 
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:>2129
+++Properties
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\properties\
+++appsettings.json
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\appsettings.json
+++appsettings.Development.json
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\appsettings.development.json
+++Program.cs
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\program.cs
+++Startup.cs
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\startup.cs
+++No service dependencies discovered
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:>2130
+++launchSettings.json
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\properties\launchsettings.json
+++Microsoft.AspNetCore.Analyzers
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\frameworksanddrivers\uis\cleanarquitecturealta.api\microsoft.aspnetcore.app
+++Microsoft.EntityFrameworkCore.Design (5.0.16)
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:>2301
+++Swashbuckle.AspNetCore (5.6.3)
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:>2302
+++Alta.Controllers
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\bin\debug\net5.0\alta.controllers.dll
+i:{e36de8c0-9daa-4b09-a379-6c953640a439}:Alta.Controllers
+++Alta.IoC
+i:{deb2e6ac-b69a-4349-920c-b5d0f7de3536}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.ioc\bin\debug\net5.0\alta.ioc.dll
+i:{16eeb3fa-c41b-489e-92b2-820737ce61c1}:Alta.IoC
+++Security
+i:{dd9d73f0-fd9b-4ef9-b678-c244e3bb251d}:Security
+++Alta.Authentication
+i:{bfebdfe2-9fbc-4c59-a5e9-3173b86a9681}:Alta.Authentication
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\alta.authentication\bin\debug\net5.0\alta.authentication.dll
+++Microsoft.AspNetCore.Authentication (2.2.0)
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:>2176
+++Microsoft.AspNetCore.Authentication.Cookies (2.2.0)
+i:{0f47f33b-2848-466f-b3bc-fd36e356770a}:>2180
+++InterfaceAdapters
+i:{5df9561d-953f-4adf-9113-24c8417201c3}:InterfaceAdapters
+++Presenters
+i:{bcedf2e8-c2b9-4633-85a6-cd0bd37e77e3}:Presenters
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\
+++Alta.Presenters
+i:{491380d8-abbf-4b9d-93c5-7ec4b2779dea}:Alta.Presenters
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\bin\debug\net5.0\alta.presenters.dll
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\bin\debug\net5.0\alta.presenters.dll
+++CreateLineInventoryPresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\createlineinventorypresenter.cs
+++HeartBeatInitiatePresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\heartbeatinitiatepresenter.cs
+++LoginPresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\loginpresenter.cs
+++MovementConfirmPresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\movementconfirmpresenter.cs
+++RequestInitiatePresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\presenters\requestinitiatepresenter.cs
+++IPresenter.cs
+i:{0cfa25c0-3aba-496d-8546-4519bfaa8408}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\presenters\cleanarquitecturealta.presenters\interfaces\ipresenter.cs
+++Controllers
+i:{bcedf2e8-c2b9-4633-85a6-cd0bd37e77e3}:Controllers
+++AltaWS
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\
+++AltaWSController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\altawscontroller.cs
+++CreateLineInventoryController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\createlineinventorycontroller.cs
+++HeartBeatInititateController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\heartbeatinititatecontroller.cs
+++MovementConfirmController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\movementconfirmcontroller.cs
+++RequestInitiateController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\altaws\requestinitiatecontroller.cs
+++Filters
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\filters\
+++Login
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\login\
+++HomeController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\login\homecontroller.cs
+++LoginController.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\login\logincontroller.cs
+++Middlewares
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\middlewares\
+++HeaderValidationFilter.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\filters\headervalidationfilter.cs
+++MessageFilter.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\filters\messagefilter.cs
+++ExceptionMiddleware.cs
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\controllers\cleanarquitecturealta.controllers\middlewares\exceptionmiddleware.cs
+++Microsoft.AspNetCore.Mvc.Core (2.2.5)
+i:{abecbd9f-49c7-4c96-99c9-25618a496742}:>2285
+++Gateways
+i:{bcedf2e8-c2b9-4633-85a6-cd0bd37e77e3}:Gateways
+++Alta.EFCore
+i:{16eeb3fa-c41b-489e-92b2-820737ce61c1}:Alta.EFCore
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\bin\debug\net5.0\alta.efcore.dll
+++DataContext
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\datacontext\
+++AltaContext.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\datacontext\altacontext.cs
+++Migrations
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\
+++TypeConfigurations
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\typeconfigurations\
+++20220510163032_InitialMigration.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510163032_initialmigration.cs
+++20220510174241_AddedDBSetsAndTypeConfigurations.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510174241_addeddbsetsandtypeconfigurations.cs
+++20220510174741_AddedDBSetForDataToPrimeAndRespectiveTypeConfig.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510174741_addeddbsetfordatatoprimeandrespectivetypeconfig.cs
+++20220511210742_UserEntityConfigurations.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220511210742_userentityconfigurations.cs
+++AltaContextModelSnapshot.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\altacontextmodelsnapshot.cs
+++ConsoleLoggingRepository.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\repositories\consoleloggingrepository.cs
+++SQLServerUnitOfWork.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\repositories\sqlserverunitofwork.cs
+++UserLoginRepository.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\repositories\userloginrepository.cs
+++UserTypeConfiguration.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\typeconfigurations\usertypeconfiguration.cs
+++Microsoft.EntityFrameworkCore (5.0.16)
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:>2258
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.16)
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:>2261
+++20220510163032_InitialMigration.Designer.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510163032_initialmigration.designer.cs
+++20220510174241_AddedDBSetsAndTypeConfigurations.Designer.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510174241_addeddbsetsandtypeconfigurations.designer.cs
+++20220510174741_AddedDBSetForDataToPrimeAndRespectiveTypeConfig.Designer.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220510174741_addeddbsetfordatatoprimeandrespectivetypeconfig.designer.cs
+++20220511210742_UserEntityConfigurations.Designer.cs
+i:{66145f11-bef1-47a7-847b-93d0b86c63f2}:c:\users\alexd\cleanarquitecturealta\src\interfaceadapters\gateways\cleanarquitecturealta.efcore\migrations\20220511210742_userentityconfigurations.designer.cs
+++Alta.RabbitMQ
+i:{3b913458-6e20-4f06-85c3-afc18b775967}:c:\users\alexd\cleanarquitecturealta\alta.rabbitmq\bin\debug\net5.0\alta.rabbitmq.dll
+i:{16eeb3fa-c41b-489e-92b2-820737ce61c1}:Alta.RabbitMQ
+++HttpPrimeClient.cs
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\httpprimeclient.cs
+++PrimeCredentials.cs
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\primecredentials.cs
+++PrimeWsOptions.cs
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\primewsoptions.cs
+++TransactionResultExtension.cs
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:c:\users\alexd\cleanarquitecturealta\alta.primeclient\transactionresultextension.cs
+++Microsoft.Extensions.DependencyInjection (5.0.2)
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2263
+++Microsoft.Extensions.Http (5.0.0)
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2259
+++Microsoft.Extensions.Http.Polly (5.0.1)
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2269
+++Microsoft.Extensions.Options.ConfigurationExtensions (5.0.0)
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2256
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>2214
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>2181
+++Polly (7.2.3)
+i:{2cd1765f-df5b-4551-bdf7-1a0bbbd60d22}:>2265
+++Configurations
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\configurations\
+++MongoDesign.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\configurations\mongodesign.cs
+++MongoDesigner.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\configurations\mongodesigner.cs
+++MongoOptions.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\configurations\mongooptions.cs
+++MongoSettings.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\configurations\mongosettings.cs
+++IMongoContext.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\interfaces\imongocontext.cs
+++IMongoService.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\interfaces\imongoservice.cs
+++CreateLineInventoryRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\createlineinventoryrepository.cs
+++HeartBeatConfirmRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\heartbeatconfirmrepository.cs
+++HeartBeatInitiateRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\heartbeatinitiaterepository.cs
+++LoadDetailRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\loaddetailrepository.cs
+++LoadErrorRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\loaderrorrepository.cs
+++MovementConfirmRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\movementconfirmrepository.cs
+++RequestInitiateRepository.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\repositories\requestinitiaterepository.cs
+++MongoContext.cs
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:c:\users\alexd\cleanarquitecturealta\alta.mongo\mongocontext.cs
+++Microsoft.Extensions.Configuration.Abstractions (6.0.0)
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>2212
+++Microsoft.Extensions.Options (6.0.0)
+i:{9751a117-736c-4fe7-82fd-143b7f06b8ef}:>2219
+++RabbitOptions.cs
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\users\alexd\cleanarquitecturealta\alta.rabbitmq\rabbitoptions.cs
+++ServiceSettings.cs
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:c:\users\alexd\cleanarquitecturealta\alta.rabbitmq\servicesettings.cs
+++MassTransit.AspNetCore (7.3.1)
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>2175
+++MassTransit.RabbitMQ (7.3.1)
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>2182
+++Microsoft.VisualStudio.Services.Client (16.170.0)
+i:{6ae0808a-2b3c-4197-9bc6-1b3df785a8a6}:>2177

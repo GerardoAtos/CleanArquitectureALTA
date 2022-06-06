@@ -1,0 +1,12 @@
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\bin\Debug\net5.0\Alta.RabbitMQ.deps.json
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\bin\Debug\net5.0\Alta.RabbitMQ.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\bin\Debug\net5.0\Alta.RabbitMQ.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\refint\Alta.RabbitMQ.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\Alta.RabbitMQ.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.RabbitMQ\obj\Debug\net5.0\ref\Alta.RabbitMQ.dll

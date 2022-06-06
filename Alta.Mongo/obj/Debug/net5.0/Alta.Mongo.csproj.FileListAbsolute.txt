@@ -1,0 +1,17 @@
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.Mongo.deps.json
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.Mongo.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.Mongo.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.csproj.CopyComplete
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\refint\Alta.Mongo.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\Alta.Mongo.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\obj\Debug\net5.0\ref\Alta.Mongo.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Mongo\bin\Debug\net5.0\Alta.Entities.pdb

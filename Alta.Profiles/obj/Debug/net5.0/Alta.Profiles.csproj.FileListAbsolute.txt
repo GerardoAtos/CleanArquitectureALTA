@@ -1,0 +1,17 @@
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.Profiles.deps.json
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.Profiles.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.Profiles.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\bin\Debug\net5.0\Alta.Entities.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.csproj.CopyComplete
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\refint\Alta.Profiles.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\Alta.Profiles.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Profiles\obj\Debug\net5.0\ref\Alta.Profiles.dll

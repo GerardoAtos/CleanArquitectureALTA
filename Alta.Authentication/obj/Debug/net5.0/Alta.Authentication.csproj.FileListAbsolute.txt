@@ -1,0 +1,12 @@
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\bin\Debug\net5.0\Alta.Authentication.deps.json
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\bin\Debug\net5.0\Alta.Authentication.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\bin\Debug\net5.0\Alta.Authentication.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\refint\Alta.Authentication.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\Alta.Authentication.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Authentication\obj\Debug\net5.0\ref\Alta.Authentication.dll
